@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+            box-sizing: border-box;
+        }
+        header>#div1>video{
+             /* position: absolute;
+            top: 0;
+            left: 0;
+            max-width: 100%;
+            object-fit: cover;
+            height: auto;
+            object-fit: cover;
+            z-index: -1; */
+            /* overflow: hidden; */
+            overflow-x: 1500px;
+            height: 200px;
+
+        }
+        #div1>img:first-of-type{
+            /* background-color: black; */
+            width: 185px;
+            height: 45px;
+            position:absolute;
+            top:280px;
+            left: 650px;
+
+        }
+        #div1>p:nth-of-type(2){
+            font-size: 60px;
+            font-weight: bolder;
+            /* background-color: black; */
+            color:white;  
+            /* font-family: sans-serif; */
+            position:absolute;
+            top:400px; 
+            left: 540px;
+        }
+            #div1>p:first-of-type{
+            font-size: 60px;
+            font-weight: bolder;
+            /* background-color: black; */
+            color:white;  
+            /* font-family: sans-serif; */
+            position:absolute;
+            top:350px; 
+            left: 620px;
+        }
+        #div1>p:nth-of-type(3){
+            font-size: 22px;
+            font-weight: bolder;
+            font-family: sans-serif;
+            /* background-color: black; */
+            color:white; 
+            position:absolute;
+            top:480px;    
+            left: 550px;    
+        }
+        #div1>p:last-of-type{
+            font-size: 22px;
+            font-weight: bolder;
+            font-family: sans-serif;
+            /* background-color: black; */
+            color:white; 
+            position:absolute;
+            top:500px;    
+            left: 620px;    
+        }
+        #div1>img:nth-of-type(2){
+            width: 180px;
+            height: 60px;
+            position:absolute;
+            top:550px;
+            left: 550px;
+            transition:all 2s;
+        }
+        #div1>img:hover{
+            transform: scale(1.2);
+        }
+        #div1>img:last-of-type{
+            width: 160px;
+            height: 60px;
+            position:absolute;
+            top:550px;
+            left: 780px;
+            transition:all 2s;
+        }
+        #div1>#anchor,#div1>#i1{
+            font-size: 20px;
+            margin-top: 675px;
+            margin-left: 680px;
+            /* border:2px solid red; */
+            background-color: transparent;
+            color:white;
+            text-decoration: none;
+            /* background-color: black; */
+            animation: demo;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+         @keyframes demo {
+            from{
+                position: absolute;
+                top: 0px;
+                bottom: 10px;
+            }
+            to{
+                position: absolute;
+                top: 10px;
+                bottom: 0px;
+            }
+        }
+        #div1>#i1{
+            margin-left: 780px;
+
+        }
+        #sec1{
+            background-image: url(https://b.zmtcdn.com/data/o2_assets/901001826baf04838b1bf505176ff0b11742453501.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+             background-position: center;
+             height:900px; ;
+             width:100%;
+        }
+        #div2{
+            height: 500px;
+            width: 100%;
+        }
+        #sec1>#div2>#burger1>#burger{
+          margin-top: 200px;
+          animation: burger;
+          animation-duration: 2s;
+          /* animation-iteration-count: infinite; */
+        }
+        @keyframes burger {
+            from{
+                position: absolute;
+                left:0px;
+
+            }
+            to{
+                position: absolute;
+                left: 280px;
+            } 
+        }
+        #sec1>#div2>#momos1>#momos{
+          margin-top: -1200px;
+          margin-left:1200px;;
+          animation: momo;
+          animation-duration: 2s;
+          /* animation-iteration-count: infinite; */
+        }
+        @keyframes momo {
+            from{
+                position: absolute;
+                right:0px;
+
+            }
+            to{
+                position: absolute;
+                right: 280px;
+            }
+        }
+        #frames{
+            display:flex;
+            gap: 150px;
+            margin-top: 100px;
+            margin-left: 400px;
+        }
+        #frames>#frame>img{
+            width: 75px;
+            height: 55px;
+            position: relative;
+            left: 170px;
+           bottom: 60px;
+
+        }
+        #frames>div>p:first-child{
+            font-size: 35px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            color: rgba(0, 0, 0, 0.727);
+        }
+        #frames>div>p:last-of-type{
+            font-size: 20px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.603);
+        }
+        #frames>#frame1>img{
+            width: 35px;
+            height: 55px;
+            position: relative;
+            left: 100px;
+            bottom: 60px;
+        }
+        #frames>#frame2>img{
+            width: 55px;
+            height: 55px;
+            position: relative;
+            left: 170px;
+            bottom: 60px;
+        }
+        #frames{
+            background-color: white;
+            /* border:2px solid red; */
+            width: 850px;
+            height:106px;
+            padding-top: 20px;
+            padding-left: 40px;
+            border-radius: 40px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.415);
+            border:none;
+            margin-left: 400px;
+            margin-top: 180px;
+            
+        }
+        #center-details>p:first-of-type{
+            font-size: 50px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color:rgba(255, 0, 0, 0.696);
+        }
+        #center-details>p:last-of-type{
+            font-size: 22px;
+            /* font-weight: bold; */
+            font-family: sans-serif;
+            color:rgba(0, 0, 0, 0.619);
+            margin-top: 20px;
+            padding:10px;
+        }
+        #center-details{
+            margin-left: 600px;
+            margin-top: -300px;
+            /* align-items: center; */
+        }
+        #sec2>#mobile-block{
+            display:flex;
+            margin-top: 20px;
+            margin-left:500px;
+
+        }
+        #sec2>#mobile-p>p:first-of-type{
+            color:rgba(255, 0, 0, 0.696);
+            font-size: 50px;
+            font-family: sans-serif;
+            font-weight: bold;
+            margin-top: 100px;
+            margin-left: 500px;
+        }
+        #sec2>#mobile-p>p:last-of-type{
+            font-size: 22px;
+            font-family: sans-serif;
+            color:rgba(0, 0, 0, 0.592);
+            margin-top: 20px;
+            margin-left: 540px;
+            padding:10px
+        }
+        #mobileimg{
+            position: relative;
+        }
+        #calender{
+            position:absolute;
+            top:100px;
+            left: 70px;
+            /* border:2px solid; */
+            border-radius: 20px;
+            height: 180px;
+            padding: 10px;
+            border:none;
+            color:white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.415);
+        }
+        #calender>p{
+            color:black;
+            margin-left: 40px;
+            font-size: 20px;
+        }
+        #healthy,#vegmode,#planaparty,#giftcards,#gourmet,#offers,#foodon,#collections{
+            /* border:2px solid red; */
+            padding: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.415);
+            border-radius: 20px;
+            text-align:center;
+            height: 130px;
+        }
+        #left-div{
+            position:relative;
+        }
+        #healthy{
+            position: absolute;
+            right: 190px;
+            top: 30px;
+        }
+        #vegmode{
+            position: absolute;
+            right: 40px;
+            top: 10px;
+        }
+        #planaparty{
+            position: absolute;
+            right: 180px;
+            top: 180px;
+        }
+         #giftcards{
+            position: absolute;
+            right: 40px;
+            top: 160px;
+        }
+       #right-div{
+            position:relative;
+        }
+        #gourmet{
+           position: absolute;
+           top: 40px;
+           left:30px;
+
+        }
+        #offers{
+           position: absolute;
+           left:160px;
+        }
+        #foodon{
+            position: absolute;
+            top:190px;
+           left:70px;
+        }
+        #collections{
+            position: absolute;
+            top:150px;
+           left:200px;
+
+        }
+        #left-div>p{
+            font-size: 18px;
+            font-family: sans-serif;
+        }
+        #sec2{
+            /* border:2px solid red; */
+            width:100%;
+            border-bottom-left-radius:20%;
+            border-bottom-right-radius:20%;
+            /* border-radius: 0 0 28% 28%; */
+            height: 800px;
+            background:linear-gradient(rgba(255, 192, 203, 0.57),white,whitesmoke,white);
+            /* position:relative;
+            z-index: 1; */
+            position: absolute;
+             z-index: 2;
+            /* top: 0; left: 0; */
+
+        }
+        #gold{
+            background-color: black;
+            margin-top: 500px;
+            width: 100%;
+            /* margin-top: 200px; */
+            height: 1200px;
+            /* position:relative;
+            z-index: 2; */
+            position: absolute;
+            z-index: 1;
+            /* top: 20px; left: 20px; */
+        }
+        #coin22{
+            margin-top: 710px;
+            margin-left:1250px;
+            position: absolute;
+            z-index: 4;
+        }
+         #coin33{
+            margin-top: 1400px;
+            margin-left:1300px;
+            position: absolute;
+            z-index: 4;
+        }
+        
+        #sec3>#gold>#coins>img:first-of-type{
+            margin-top: 280px;
+        }
+        #gold-align>img:first-of-type{
+            width: 160px;
+            height: 30px;
+            margin-left: 650px;
+        }
+        #gold-align>img:nth-of-type(2){
+            width: 300px;
+            height:90px;
+            margin-left: 600px;
+            margin-top: 30px;
+        }
+        #gold-align>p:first-of-type{
+            color:goldenrod;
+            font-size: 24px;
+            margin-left: 630px;
+            margin-top: 25px;
+        }
+        #gold-align>p:nth-of-type(2){
+            color:goldenrod;
+            font-size: 24px;
+            padding: 10px;
+            letter-spacing: 8px;
+            height:80px;
+            margin-left: 600px;
+            margin-top: 25px;
+
+        }
+        #black>#left>img{
+            width: 85px;
+            height:85px;
+            margin-left:280px;
+        }
+        #black>#right>img{
+            width: 85px;
+            height:85px;
+        }
+        #black>#left>p:first-of-type{
+            color:white;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 10px;
+            letter-spacing: 3px;
+            height:60px;
+            margin-left:380px;
+            margin-top: -80px;
+        }
+        #black>#left>p:last-of-type{
+            color:goldenrod;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            height:60px;
+            margin-left:380px;
+            margin-top: -10px;
+        }
+        #black>#right>p:first-of-type{
+            color:white;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 10px;
+            letter-spacing: 3px;
+            height:60px;
+            margin-left: 120px;
+            margin-top: -80px;
+        }
+        #black>#right>p:last-of-type{
+            color:goldenrod;
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 3px;
+            height:60px;
+             margin-left: 120px;
+             margin-top: -10px;
+        }
+        #black{
+            display:flex;
+            gap:30px
+        }
+        #sec4{
+            background-color: white;
+            position: absolute;
+            z-index: 3;
+            /* border:2px solid red; */
+            margin-top: 1450px;
+            border-top-left-radius: 130px;
+            border-top-right-radius:130px;
+            /* border-radius: 500%; */
+            width:100%;
+             transition: all 1s;
+
+        }
+        #cards{
+            display:flex;
+            margin-top: 100px;
+            justify-content: space-evenly;
+        }#sec4>#eternal{
+            text-align:center;
+            margin-top: 160px;
+            padding:10px;
+        }
+       #card1,#card2,#card3,#card4{
+        text-align: center;
+        height: 400px;
+        width: 250px;
+        border-radius: 30px;
+       }
+       #card1:hover,#card2:hover,#card3:hover,#card4:hover{
+        transform: scale(1.2);
+       }
+       #card1{
+        background: linear-gradient(rgba(255, 192, 203, 0.625), white);
+        border:5px solid pink;
+        padding: 20px;
+       }
+       #card2{
+            background: linear-gradient(rgba(255, 255, 0, 0.642),white);
+            border:5px solid yellow;
+            padding: 20px;
+       }
+         #card3{
+            background: linear-gradient(rgba(0, 0, 255, 0.664),white);
+            border:5px solid blue;
+            padding: 20px;
+       }
+         #card4{
+            background: linear-gradient(rgba(255, 0, 0, 0.642),white);
+            border:5px solid red;
+            padding: 20px;
+       }
+        #card1>img,#card2>img,#card3>img,#card4>img{
+            border-radius: 40px;
+            padding:10px;
+        }
+        #card1>p:first-of-type,#card2>p:first-of-type,#card3>p:first-of-type,#card4>p:first-of-type{
+            font-size: 22px;
+            color: black;
+            font-weight: bold;
+        }
+         #card1>p:nth-of-type(2), #card2>p:nth-of-type(2),  #card3>p:nth-of-type(2),  #card4>p:nth-of-type(2){
+            font-size: 20px;
+             color: rgba(0, 0, 0, 0.749);
+        }
+         #card1>p:last-of-type,#card2>p:last-of-type,#card3>p:last-of-type,#card4>p:last-of-type{
+            font-size: 18px;
+             color: black;
+        }
+        #phone-block{
+            margin-top: 2500px;
+            display: flex;
+            justify-content: space-evenly;
+            padding:30px;
+            width: 1300px;
+            height: 500px;
+            background-color: white;
+            border-radius: 40px;
+            margin-left: 150px;
+            border: 10px solid pink;
+            box-shadow: 0px 0px 50px rgba(255, 192, 203, 0.288);
+            border-radius: 50px;
+            background: linear-gradient(rgba(255, 192, 203, 0.285),white);
+        }
+        #phone-block1{
+            margin-top: 200px;
+        }
+        #phone-block1>p:first-of-type{
+            font-size: 40px;
+            font-family: sans-serif;
+            font-weight: bold;
+            margin-top:- ;
+
+        }
+         #phone-block1>p:last-of-type{
+            font-size: 24px;
+            font-family: sans-serif;
+            color:rgba(0, 0, 0, 0.811);
+             margin-top:25px;
+             margin-bottom: 25px;
+
+        }
+        #phone-block2>div>img:last-of-type{
+          height: 500px;
+          width: 450px;
+              
+        }
+        #phone-block2>div>div>img:last-of-type{
+            margin-left: 130px;
+           position: relative;
+           bottom: 300px;
+              
+        }
+        #phone-block2>div>div>:last-of-type{
+            margin-left: 150px;
+           position: relative;
+           bottom: 350px;
+           font-size: 20px;
+        }
+        #sec6{
+            display:flex;
+            justify-content: space-evenly;
+            background-color: black;
+            margin-top:50px ;
+            height: 500px;
+            color: white;
+        }
+        #sec6>div, #sec6>#grid2, #sec6>#grid3, #sec6>#grid1, #sec6>#grid4, #sec6#grid5{
+            margin-top:100px ;
+        }
+        #grid1>p,#grid2>p,  #grid3>p,#grid4>p, #grid5>p{
+              font-size: 24px;
+        }
+        #grid1,#grid2,  #grid3,#grid4, #grid5{
+            font-size: 20px;
+            color: rgba(245, 245, 245, 0.57);
+        }
+
+
+       
+
+        
+
+    </style>
+</head>
+<body>
+       <div id="div1">
+        <video src="https://b.zmtcdn.com/data/file_assets/2627bbed9d6c068e50d2aadcca11ddbb1743095810.mp4" autoplay muted></video>
+        <img src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png" alt="">
+        <p>India’s #1</p>
+        <p>food delivery app</p>
+        <p>Experience fast & easy online ordering  </p>
+        <p> on the Zomato app</p>
+        <img src="https://b.zmtcdn.com/data/o2_assets/aad864bd17860b27634fe621001c32db1739350431.png" alt="">
+        <img src="https://b.zmtcdn.com/data/o2_assets/df6464de32f4a09262cee301f65aaa661739351256.png" alt="">
+        <a id="anchor" href="">Scroll down</a>
+       <i id="i1" class="fa-solid fa-arrow-down"></i>
+       </div>
+       <section id="sec1">
+        <div id="div2">
+            <div id="burger1">
+                      <img  id="burger" height="250px" width="250px" src="https://b.zmtcdn.com/data/o2_assets/110a09a9d81f0e5305041c1b507d0f391743058910.png" alt="">
+            </div>
+            <div id="momos1">
+                <img id="momos" height="250px" width="250px" src="https://b.zmtcdn.com/data/o2_assets/b4f62434088b0ddfa9b370991f58ca601743060218.png" alt="">
+            </div>
+             <img id="img3" height="100px" width="100px" src="https://b.zmtcdn.com/data/o2_assets/316495f4ba2a9c9d9aa97fed9fe61cf71743059024.png" alt="">
+             <img id="img4" height="100px" width="100px" src="https://b.zmtcdn.com/data/o2_assets/70b50e1a48a82437bfa2bed925b862701742892555.png" alt="">
+             <img id="img5" height="100px" width="100px" src="https://b.zmtcdn.com/data/o2_assets/9ef1cc6ecf1d92798507ffad71e9492d1742892584.png" alt="">
+             <img id="img6"height="100px" width="100px" src="https://b.zmtcdn.com/data/o2_assets/9ef1cc6ecf1d92798507ffad71e9492d1742892584.png" alt="">
+             <div id="center-details">
+                <p>Better food for <br> &nbsp;    more people</p>
+                <p>For over a decade, we’ve enabled our &nbsp; <br> &nbsp; customers to discover new tastes, <br> &nbsp;&nbsp; delivered right to their doorstep</p>
+             </div>
+           <div id="frames">
+              <div id="frame">
+                        <p>3,00,000+</p>
+                        <p>resturants</p>
+                        <img src="https://b.zmtcdn.com/data/o2_assets/d19ec60986487a77bcb026e5efc3325f1742908200.png" alt="">
+             </div>
+             <!-- <div id="l1">
+             </div> -->
+            <div id="frame1">
+                        <p>800+</p>
+                        <p>cities</p>
+                        <img src="https://b.zmtcdn.com/data/o2_assets/e7533c4081d6140da37b9f430cb7b8051743006192.png" alt="">
+             </div>
+             <!-- <div id="l2"></div> -->
+             <div id="frame2">
+                        <p>3 billion+</p>
+                        <p>orders delivered</p>
+                        <img src="https://b.zmtcdn.com/data/o2_assets/713443cc5944ce4284d7e49e75e2aacf1742466222.png" alt="">
+             </div>
+           </div>
+        </div>
+       </section>
+       <section id="sec2">
+          <div id="mobile-p">
+            <p>What’s waiting for you <br> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; on the app?</p>
+            <p>Our app is packed with features that <br> &nbsp;&nbsp;&nbsp;enable you to experience food  <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delivery like never before</p>
+          </div>
+          <div id="mobile-block">
+            <div id="left-div">
+            <div id="healthy"><img height="80px" width="110px" src="https://b.zmtcdn.com/data/o2_assets/d0f1639403f80f8f2c19e0d538222e661742455804.png" alt=""><p>healthy</p></div>
+            <div id="vegmode"><img height="80px" width="110px"  src="https://b.zmtcdn.com/data/o2_assets/82f145180cd6f920a8a8617dda366a0a1742455963.png" alt=""><p>veg mode</p></div>
+            <div id="planaparty"><img height="80px" width="110px"  src="https://b.zmtcdn.com/data/o2_assets/5e7aab0f183b36fc12c29279f0cb55181742462245.png" alt=""><p>plan a party</p></div>
+            <div id="giftcards"><img height="80px" width="110px"  src="https://b.zmtcdn.com/data/o2_assets/867f86a10503998e437963bb37c451591742455764.png" alt=""><p>gift cards</p></div>
+          </div>
+          <div id="center-div">
+            <div id="mobileimg">
+                <img height="300px" width="300px" src="https://b.zmtcdn.com/data/o2_assets/3f7e2757e62fd22592b879bd56b666011742294630.png" alt="">
+                <div id="calender">
+                    <img height="100px" width="140px"  src="https://b.zmtcdn.com/data/o2_assets/cc1caf220c91be38dd94cce12b416fcd1746550226.png" alt="">
+                    <p>Shedule <br> your order</p>
+                </div>
+            </div>
+          </div>
+          <div id="right-div">
+            <div id="gourmet"><img height="80px" width="110px"  src="https://b.zmtcdn.com/data/o2_assets/6e27c9acde6045c272a28e6eb275727e1742455789.png" alt=""><p>gourment</p></div>
+            <div id="offers"><img height="80px" width="110px"  src="https://b.zmtcdn.com/data/o2_assets/813952c961fd13588cb71867d84ea7dc1742455815.png" alt=""><p>orders</p></div>
+            <div id="foodon"><img height="80px" width="110px"  src="https://b.zmtcdn.com/data/o2_assets/06d090307e02772693ac06123b53459b1742455939.png" alt=""><p>food on</p></div>
+            <div id="collections"><img height="80px" width="110px"  src="https://b.zmtcdn.com/data/o2_assets/5e973dd10c387878009c66d625ae541a1746550690.png" alt=""><p>collections</p></div>
+          </div>
+          </div>
+       </section>
+       <section id="sec3">
+        <div id="gold">
+            <div id="coins">
+                <img height="140px" width="185px" src="https://b.zmtcdn.com/data/o2_assets/6ecb2e1b4e412376645848c9c39098a81739521607.png" alt="" id="coin1">
+            </div>
+            <div id="gold-align">
+                <img src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png" alt="">
+                <img src="https://b.zmtcdn.com/data/o2_assets/fe0795a6c0061186abc4d9af9771ac751738564951.png" alt="">
+                <p> &nbsp;&nbsp;&nbsp;India's Top Savings <br> Program for Food Lovers</p>
+                <p>GOLD BENEFITS</p>
+              <div id="black">
+                 <div id="left">
+                <img src="https://b.zmtcdn.com/data/o2_assets/bc9d2a579285cbdaa101b8fe2ba68f601741779645.png" alt="">
+                <p>Free Delivery</p>
+                <P>At all resturants within 7km</P>
+               </div>
+                <div id="right">
+                <img src="https://b.zmtcdn.com/data/o2_assets/d668ed26c7d4771318d0aa03b3f905e71741779899.png" alt="">
+                <p>Up to 30% extra off</p>
+                <P>At 20,0000+ partner resturents</P>
+                </div>
+              </div>
+            </div> 
+          </div>
+          <div id="coin22">
+                  <img height="220px" width="260px" src="https://b.zmtcdn.com/data/o2_assets/eae1c0140168456506dca2736dc9b1c61742909660.png" alt="" id="coin2">
+              </div>
+              <div id="coin33">
+                <img height="100px" width="100px"  src="https://b.zmtcdn.com/data/o2_assets/22c34e84a18aed26be7638c77e4e695b1742909865.png" alt="" id="coin3">
+              </div>
+       </section>
+       <section id="sec4">
+        <div id="eternal">
+            <img height="150px" width="250px"  src="https://b.zmtcdn.com/data/o2_assets/81ed35564614cbdf5188bb72dc7e57b51739536377.png" alt="">
+            <p>POWERING INDIA’S <br> CHANGING LIFESTYLES</p>
+        </div>
+        <div id="cards">
+            <div id="card1">
+                 <img height="150px" width="150px" src="https://b.zmtcdn.com/data/o2_assets/d1eee2be61cf47e2332cb7c49475c0981739777714.png" alt="">
+                <p>ZOMATO</p>
+                <p>Get the app now to start <br>  ordering your favourite <br> dishes!</p>
+                <p>check it out</p>
+            </div>
+            <div id="card2">
+                <img height="150px" width="150px" src="https://b.zmtcdn.com/data/o2_assets/071cb96db84f20eea3a39804e113bdee1739777655.png" alt="">
+                <p>blink it</p>
+                <p>choose from 10,000+ <br> product & get them <br> delivered in minutes</p>
+                <p>check it out</p>
+            </div>
+            <div id="card3">
+                 <img height="150px" width="150px" src="https://b.zmtcdn.com/data/o2_assets/38bf2d77d9391b8b1866e3ae2b5fe19a1739777683.png" alt="">
+                <p>district</p>
+                <p>The best of the events <br> movies,dining,and <br> everything you love!</p>
+                <p>check it out</p>
+            </div>
+            <div id="card4">
+                 <img height="150px" width="150px" src="https://b.zmtcdn.com/data/o2_assets/9207cd0fc68c4ac55cfd3bfa00c02a351739777699.png" alt="">
+                <p>hyperpure</p>
+                <p>Offering complete supply <br>&nbsp;chain solution for your <br>&nbsp;&nbsp; resturant</p>
+                <p>check it out</p>
+            </div>
+        </div>
+       </section>
+         <div id="phone-block">
+             <div id="phone-block1">
+            <p>Download the app now!</p>
+            <p>Experience seamless online ordering <br> only on the Zomato app</p>
+         <img src=" https://b.zmtcdn.com/data/o2_assets/aad864bd17860b27634fe621001c32db1739350431.png" alt=""  width="180px"
+            height="60px">
+        <img src="https://b.zmtcdn.com/data/o2_assets/df6464de32f4a09262cee301f65aaa661739351256.png" alt="" width="160px"
+            height="60px">
+          </div>
+          <div id="phone-block2">
+            <div>
+                 <img height="200px" width="250px" src="https://b.zmtcdn.com/data/o2_assets/3f7e2757e62fd22592b879bd56b666011742294630.png" alt="">
+                <div>
+                    <p> Scan the QR code to <br> download the app</p>
+                    <img height="200px" width="200px" src="https://b.zmtcdn.com/data/o2_assets/98cc4eba0a6f59e728e5223a70fd39551742471514.png" alt="">
+                </div>
+            </div>
+          </div>
+         </div>
+         <section id="sec6">
+            <div>
+                <img   width="185px"
+            height="45px" src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png" alt="">
+            </div>
+        <div id="grid1">
+            <p> Eternal </p>
+           Zomato <br> Blinkit <br> District <br> Hyperpure <br>
+        Feeding India <br>Investor Relations
+        </div>
+        <div id="grid2">
+            <p>For Restaurants</p>
+            Partner With Us <br>Apps For You
+        </div>
+        <div id="grid3">
+            <p>For Delivery Partners</p>
+            Partner With Us <br>Apps For You
+        </div>
+        <div id="grid4">
+            <p>Learn More</p>
+            Privacy <br>Security <br>Terms of Service <br>Help & Support <br>Report a Fraud <br>Blog
+        </div>
+        <div id="grid5">
+            <p>Social links</p>
+         <i class="fa-brands fa-linkedin"></i>
+         <i class="fa-brands fa-instagram"></i>
+         <i class="fa-brands fa-facebook"></i>
+         <i class="fa-brands fa-youtube"></i>
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+       </section>
+           <div id="grid6">
+            <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners
+2008-2025 © Zomato™ Ltd. All rights reserved.</p>
+        </div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.html">
+    <link rel="stylesheet" href="./about.html">
+    <link rel="stylesheet" href="./menu.html">
+    <link rel="stylesheet" href="./franchise.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+        }
+        #flex-container{
+        background-image: url(https://knight-bite.com/res/menu/banner.webp);
+            /* background-color: rgba(0, 0, 0, 0.434); */
+        height: 800px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+        }
+         header{
+        background-color:#00000060;
+        /* opacity: 0.5; */
+        padding:10px;
+        height:100px;
+        position: fixed;
+        top:0px;
+        width:100%;
+
+    }
+    #div1>img{
+        margin-left: 70px;
+         margin-top: 10px;
+         /* background-color:black; */
+    }
+    #span{
+        width:450px;
+        height:40px;
+        margin-left: 800px;
+        position:absolute;
+        top:30px;
+        right:20px;
+        padding: 10px;
+    }
+    #span>a{
+        font-size: 18px;
+        margin:0px 15px;
+        color:whitesmoke;
+        font-family: sans-serif;
+        text-decoration: none;
+    }
+    #span>a:hover{
+        color:blue;
+    }
+    #section1{
+     display:flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     margin-left: -30px;
+     padding: 10px;
+    }
+    section>figure>figcaption>img{
+        width: 30px;
+
+    }
+    #section1>figure>img{
+        margin-top: 150px;
+        width: 120px;
+    }
+    #section2{
+        margin-top: 50px;
+     display:flex;
+     justify-content: space-evenly;
+    }
+    #section2>#fig1>img{
+        width: 100px;
+        margin-top: -30px;
+    }
+    #section2>#fig2>img{
+        width: 60px;
+    }
+    #section2>#fig3>img{
+        width:100px;
+        margin-top: 34px;
+    }
+    section>figure{
+        font-size: 28px;
+        color:white;
+        font-weight: bold;
+    }
+    #fig4{
+        margin-left: 80px;
+        /* border:2px solid red; */
+        align-items: center;
+    }
+    section>figure>figcaption>img{
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+    #section2>figure{
+        padding:20px;
+    }
+    #fig2>figcaption{
+        margin-top: 26px;
+    }
+    #fig3>figcaption{
+        margin-top: 22px;
+    }
+    #section2>#fig2>figcaption>img{
+        margin-top: -10px;
+
+    }
+    #section2>#fig3>figcaption>img{
+           margin-top: -10px;
+    }
+    footer>#div7>p{
+        background-color: #FF5672;
+        text-align: center;
+        color:white;
+        font-size: 16px;
+        height: 30px;
+        padding: 10px;
+    }
+    #chat{
+            position: fixed;
+            right: 10px;
+            bottom: 20px;
+            font-size: 100px;
+            color:magenta;
+    }
+   
+
+
+
+    </style>
+</head>
+<body>
+    <div id="flex-container">
+    <header>
+        <div ID="div1">
+            <img height="80px" wight="800px" src="https://knight-bite.com/res/kb_logo_new_2.png" alt="logo">
+        <div>
+        <span id="span">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./menu.html">Menu</a>
+            <a href="./franchise.html">Franchise</a>
+        </span>
+    </header> 
+     <section id="section1">
+     <figure id="fig4" >
+        <img src="https://knight-bite.com/res/menu/burger-icon.png" alt="">
+        <figcaption>BURGERS</figcaption>
+        <figcaption><img src="	https://knight-bite.com/res/menu/add-icon.svg" alt=""></figcaption>
+     </figure>
+     <figure id="fig5">
+        <img src="https://knight-bite.com/res/menu/starters-icon.png" alt="">
+        <figcaption>FRIES/STARTERS</figcaption>
+        <figcaption><img src="	https://knight-bite.com/res/menu/add-icon.svg" alt=""></figcaption>
+     </figure>
+     <figure id="fig6">
+        <img src="https://knight-bite.com/res/menu/main-course-icon.png" alt="">
+        <figcaption>MAIN COURSE</figcaption>
+        <figcaption><img src="https://knight-bite.com/res/menu/add-icon.svg" alt=""></figcaption>
+     </figure>
+   </section>
+    <section id="section2">
+        <figure id="fig1">
+            <img src="https://knight-bite.com/res/menu/drinks-icon.png" alt="">
+            <figcaption>DRINKS</figcaption>
+            <figcaption><img src="https://knight-bite.com/res/menu/add-icon.svg" alt=""></figcaption>
+        </figure>
+        <figure id="fig2">
+            <img src="https://knight-bite.com/res/menu/wrap-icon.png" alt="">
+            <figcaption>WRAPS</figcaption>
+            <figcaption><img src="https://knight-bite.com/res/menu/add-icon.svg" alt=""></figcaption>
+        </figure>
+        <figure id="fig3">
+            <img src="https://knight-bite.com/res/menu/desserts-icon.png" alt="">
+            <figcaption>DESSERTS</figcaption>
+            <figcaption><img src="https://knight-bite.com/res/menu/add-icon.svg" alt=""></figcaption>
+        </figure>
+  </div>
+    <footer>
+    <div  id="div7">
+    <p>&copy; Copyright 2025. Knight Bite Foods Pvt. Ltd. All Rights Reserved</p>
+    </div>
+    <div id="chat"><i class="fa-solid fa-message" style="color: #c164e3;"></i></div>
+    </footer>
+    </div>
+</body>
+</html>

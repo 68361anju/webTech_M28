@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #gridContainer{
+            border: 2px solid red;
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-rows: repeat(5,1fr);
+            grid-template-columns: repeat(5,1fr);
+            row-gap: 5px;
+            column-gap: 10px;
+            background-color: black;
+            color: aliceblue;
+        }
+        #gridContainer>div>img{
+            width: 300px;
+        }
+
+         #item1{
+            grid-column: 1/2;
+            grid-row: 1/3;
+        }
+        #item2{
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+        #item3{
+            grid-column: 3/4;
+            grid-row: 1/3;
+        }
+        #item4{
+            grid-column: 4/5;
+            grid-row: 1/2;
+        }
+        #item5{
+            grid-column: 5/6;
+            grid-row: 1/3;
+        }
+        #item6{
+            grid-column: 2/3;
+            grid-row: 2/4;
+        }
+        #item7{
+            grid-column: 4/5;
+            grid-row: 2/4;
+        }
+        #item8{
+            grid-column: 1/2;
+            grid-row: 3/5;
+        }
+        #item9{
+            grid-column: 3/4;
+            grid-row: 3/5;
+        }
+        #item10{
+            grid-column: 5/6;
+            grid-row: 3/5;
+        }
+        #item11{
+            grid-column: 2/3;
+            grid-row:4/6;
+        }
+        #item12{
+            grid-column: 4/5;
+            grid-row: 4/6;
+        }
+        #item13{
+            grid-column: 1/2;
+            grid-row: 5/6;
+        }
+        #item14{
+            grid-column: 3/4;
+            grid-row: 5/6;
+        }
+        #item15{
+            grid-column: 5/6;
+            grid-row: 5/6;
+        }
+    </style>
+</head>
+<body>
+    <div id="gridContainer">
+        <div id="item1"><img height="270" width="300" src="https://cdn.pixabay.com/photo/2017/04/24/13/37/architecture-2256489_1280.jpg" alt=""></div>
+        <div id="item2"><img height="130" width="300" src="https://cdn.pixabay.com/photo/2025/06/19/16/21/adventure-9669329_1280.jpg" alt=""></div>
+        <div id="item3"><img height="270" width="174" src="https://cdn.pixabay.com/photo/2017/04/24/13/37/architecture-2256489_1280.jpg" alt=""></div>
+        <div id="item4"><img height="130" width="174" src="https://cdn.pixabay.com/photo/2025/07/21/15/20/eve-9726477_1280.jpg" alt=""></div>
+        <div id="item5"><img height="270" width="174" src="https://cdn.pixabay.com/photo/2017/04/24/13/37/architecture-2256489_1280.jpg" alt=""></div>
+        <div id="item6"><img height="270" width="174" src="https://cdn.pixabay.com/photo/2021/08/31/10/34/boat-shed-6588414_1280.jpg" alt=""></div>
+        <div id="item7"><img height="270" width="174" src="https://cdn.pixabay.com/photo/2017/04/24/13/37/architecture-2256489_1280.jpg" alt=""></div>
+        <div id="item8"><img height="270" width="174" src="https://cdn.pixabay.com/photo/2024/05/14/21/45/rhino-8762188_1280.jpg" alt=""></div>
+        <div id="item9"><img height="270" width="174" src="https://cdn.pixabay.com/photo/2025/06/09/16/27/animal-9650392_1280.jpg" alt=""></div>
+        <div id="item10"><img height="270" width="174" src="https://cdn.pixabay.com/photo/2017/04/24/13/37/architecture-2256489_1280.jpg" alt=""></div>
+        <div id="item11"><img height="270" width="174" src="https://cdn.pixabay.com/photo/2025/07/05/13/27/falcon-9697872_1280.jpg" alt=""></div>
+        <div id="item12"><img height="270" width="174" src="https://cdn.pixabay.com/photo/2017/04/24/13/37/architecture-2256489_1280.jpg" alt=""></div>
+        <div id="item13"><img height="130" width="174" src="https://cdn.pixabay.com/photo/2025/07/22/02/07/lemon-pancy-9727489_1280.jpg" alt=""></div>
+        <div id="item14"><img height="130" width="174" src="https://cdn.pixabay.com/photo/2017/04/24/13/37/architecture-2256489_1280.jpg" alt=""></div>
+        <div id="item15"><img height="130" width="174" src="https://cdn.pixabay.com/photo/2017/04/24/13/37/architecture-2256489_1280.jpg" alt=""></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style-type: none;
+            padding-left: 0px;
+            border: 2px solid red;
+            height: 300px;
+            display: grid;
+            grid-template-rows: repeat(2,1fr); 
+            grid-template-columns: repeat(3,1fr);
+            /* row-gap: 10px;
+            column-gap: 10px; */
+            gap: 20px;
+        }
+
+        li{
+            background-color: black;
+            color: white;
+        }
+        #list5{
+            /* grid-column-start: 2;
+            grid-column-end: 4; */
+            grid-column: 2/4;
+            /* grid-row-start:1 ;
+            grid-row-end: 2; */
+            grid-row: 2/3;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li id="list1">list item1</li>
+        <li id="list2">list item2</li>
+        <li id="list3">list item3</li>
+        <li id="list4">list item4</li>
+        <li id="list5">list item5</li>
+    </ul>
+</body>
+</html>

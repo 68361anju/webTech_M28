@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+       *{
+        margin:0px;
+        padding:0px;
+       }
+         header{
+            display:flex;
+            justify-content: space-around;
+            padding:30px;
+            background-color: black;
+            width: 100%;
+            position:fixed;
+            top:0px;
+            z-index: 10;
+        }
+        nav{
+             display:flex;
+            justify-content: space-around; 
+            /* border:2px solid red; */
+            width: 750px;
+            margin-right:250px;
+        }
+        nav>a{
+            text-decoration: none;
+            font-family: arial,sans-serif;
+            font-size: 20px;
+            padding: 10px;
+            color:white;
+        }
+        #right-head-part{
+            /* border:2px solid red; */
+            margin-right: 80px;
+            width: 450px;
+            display:flex;
+            justify-content: space-around;
+        }
+        #right-head-part>a{
+            text-decoration: none;
+            font-family: arial,sans-serif;
+            font-size: 18px;
+            padding: 10px;
+            color:white;
+        }
+        #sec1{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/Banner_Starship_Flight_8_1800x.jpg?v=1741653250);
+               background-size: contain;
+               height: 750px;
+                background-repeat: no-repeat;
+               background-position: center;
+        }
+        #sec2,#sec3,#sec4,#sec5,#sec6,#sec7,#sec8,#sec9,#sec10{
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        #sec2>div{
+            margin-top: 20px;
+        }
+        #cards{
+            height: 3000px;
+        }
+        .p-container{
+            display:flex;
+            justify-content: space-around;
+            font-size: 20px;
+            text-align: center;
+        }
+        /* section>div>div>h5{
+            font-size: 18px;
+            text-align: center;
+        } */
+        #div1{
+            height: 20px;
+            width: 300px;
+            position: relative;
+            left:600px;
+            bottom: 50px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        #button{
+            margin-left: 650px;
+            margin-top: 100px;
+        }
+        button{
+             height: 50px;
+             width: 250px;
+             background-color: black;
+             color:white;
+        }
+        #button>button{
+            background-color: white;
+            animation: demo;
+        }
+        #button>button:hover{
+           background-color: white;
+           color:black;
+           transform: translate(3px);
+        }
+        footer{
+            background-color: black;
+            height: 360px;
+            color:white;
+        }
+        #footer{
+            margin-left: 600px;
+             margin-top: 100px;
+            width: 500px;
+            display: flex;
+            justify-content:space-around;
+        }
+        #footer>a{
+               margin-top: 100px;
+               text-decoration: none;
+               color:white;
+        }
+        footer>div{
+           margin-top: 180px;
+        }
+        #cards{
+            position: relative;
+            /* z-index: -2; */
+        }
+        #div2{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_3_600x.png?v=1727398863);
+            height: 380px;
+            width: 450px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #div2:hover{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_2_600x.png?v=1727398849);        }
+          #div3{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_3_600x.png?v=1727398863);
+            height: 380px;
+            width: 450px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #div3:hover{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_2_600x.png?v=1727398849);        }
+              #div4{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_3_600x.png?v=1727398863);
+            height: 380px;
+            width: 450px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #div4:hover{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_2_600x.png?v=1727398849);        }
+              #div5{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_3_600x.png?v=1727398863);
+            height: 380px;
+            width: 450px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #div5:hover{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_2_600x.png?v=1727398849);        }
+              #div6{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_3_600x.png?v=1727398863);
+            height: 380px;
+            width: 450px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #div6:hover{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_2_600x.png?v=1727398849);        }
+              #div7{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_3_600x.png?v=1727398863);
+            height: 380px;
+            width: 450px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #div7:hover{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_2_600x.png?v=1727398849);        }
+              #div8{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_3_600x.png?v=1727398863);
+            height: 380px;
+            width: 450px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #div8:hover{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_2_600x.png?v=1727398849);        }
+              #div9{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_3_600x.png?v=1727398863);
+            height: 380px;
+            width: 450px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #div9:hover{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_2_600x.png?v=1727398849);        }
+        #div10{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/SPACEX_STARFIGURE_CLOSEUP_600x.png?v=1724454097);
+            height: 380px;
+            width: 450px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #div10:hover{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_2_600x.png?v=1727398849); 
+        }
+        #div11{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/SPACEX_STARFIGURE_CLOSEUP_600x.png?v=1724454097);
+            height: 380px;
+            width: 450px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #div11:hover{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_2_600x.png?v=1727398849);        }
+              #div12{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_3_600x.png?v=1727398863);
+            height: 380px;
+            width: 450px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #div12:hover{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_2_600x.png?v=1727398849);        }
+              #div13{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_3_600x.png?v=1727398863);
+            height: 380px;
+            width: 450px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #div13:hover{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_2_600x.png?v=1727398849);        }
+              #div14{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_3_600x.png?v=1727398863);
+            height: 380px;
+            width: 450px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #div14:hover{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_2_600x.png?v=1727398849);        }
+              #div16{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_3_600x.png?v=1727398863);
+            height: 380px;
+            width: 450px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #div16:hover{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_2_600x.png?v=1727398849);        }
+              #div17{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_3_600x.png?v=1727398863);
+            height: 380px;
+            width: 450px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #div17:hover{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_2_600x.png?v=1727398849);        }
+              #div18{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_3_600x.png?v=1727398863);
+            height: 380px;
+            width: 450px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #div18:hover{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_2_600x.png?v=1727398849);        }
+              #div19{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_3_600x.png?v=1727398863);
+            height: 380px;
+            width: 450px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #div19:hover{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_2_600x.png?v=1727398849);        }
+              #div20{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_3_600x.png?v=1727398863);
+            height: 380px;
+            width: 450px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #div20:hover{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_2_600x.png?v=1727398849);        }
+              #div21{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_3_600x.png?v=1727398863);
+            height: 380px;
+            width: 450px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #div21:hover{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_2_600x.png?v=1727398849);        }
+              #div22{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_3_600x.png?v=1727398863);
+            height: 380px;
+            width: 450px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #div22:hover{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_2_600x.png?v=1727398849);        }
+              #div23{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_3_600x.png?v=1727398863);
+            height: 380px;
+            width: 450px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #div23:hover{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_2_600x.png?v=1727398849);        }
+              #div24{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_3_600x.png?v=1727398863);
+            height: 380px;
+            width: 450px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #div24:hover{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_2_600x.png?v=1727398849);        }
+              #div25{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_3_600x.png?v=1727398863);
+            height: 380px;
+            width: 450px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #div25:hover{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_2_600x.png?v=1727398849);        }
+              #div26{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_3_600x.png?v=1727398863);
+            height: 380px;
+            width: 450px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #div26:hover{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_2_600x.png?v=1727398849);        }
+              #div27{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_3_600x.png?v=1727398863);
+            height: 380px;
+            width: 450px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #div27:hover{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_2_600x.png?v=1727398849);        }
+              #div28{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_3_600x.png?v=1727398863);
+            height: 380px;
+            width: 450px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #div28:hover{
+            background-image: url(https://shop.spacex.com/cdn/shop/files/DRAGON_STARMAN_PLUSHIE_BOTH_2_600x.png?v=1727398849);        }
+            
+    </style>
+</head>
+<body>
+  <section id="sec1">
+      <header>
+    <img height="60px" width="180px" src="https://logodix.com/logo/358.jpg" alt="">
+    <nav><a href="">Mens</a>
+            <a href="">womens</a>
+            <a href="">kids</a>
+            <a href="">accessories</a>
+            <a href="">Flight Shirts</a>
+    </nav>
+    <div id="right-head-part">
+        <a href="">Account</a>
+        <a href="">Search</a>
+        <a href="">Cart(0)</a>
+    </div>
+    </header>
+  </section>
+  <div id="cards">
+    <div id="div1">TRENDING NOW</div>
+  <section id="sec2"> 
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+  </section>
+  <div class="p-container">
+  <div id="p1"> <p>SpaceX Crew Dragon Plush</p><h5>$50.00</h5></div>
+  <div id="p2">  <p>Dragon Adjustable Cap</p><h5>$35.00</h5></div>
+  <div id="p3">  <p>SPACEX IVA SUIT FIGURE</p><h5>$300.00</h5></body></div>
+  </div>
+   <section id="sec3">
+    <div id="div5"></div>
+    <div id="div6"></div>
+    <div id="div7"></div>
+  </section>
+   <div class="p-container">
+  <div> <p>SpaceX Crew Dragon Plush</p><h5>$50.00</h5></div>
+  <div>  <p>Dragon Adjustable Cap</p><h5>$35.00</h5></div>
+  <div>  <p>SPACEX IVA SUIT FIGURE</p><h5>$300.00</h5></body></div>
+  </div>
+    <section id="sec4">
+    <div id="div8"></div>
+    <div id="div9"></div>
+    <div id="div10"></div>
+    </section>
+     <div class="p-container">
+  <div> <p>SpaceX Crew Dragon Plush</p><h5>$50.00</h5></div>
+  <div> <p>Dragon Adjustable Cap</p><h5>$35.00</h5></div>
+  <div> <p>SPACEX IVA SUIT FIGURE</p><h5>$300.00</h5></body></div>
+  </div>
+    <section id="sec5">
+    <div id="div11"></div>
+    <div id="div12"></div>
+    <div id="div13"></div>
+  </section>
+    </section>
+     <div class="p-container">
+  <div id="p1"> <p>SpaceX Crew Dragon Plush</p><h5>$50.00</h5></div>
+  <div id="p2">  <p>Dragon Adjustable Cap</p><h5>$35.00</h5></div>
+  <div id="p3">  <p>SPACEX IVA SUIT FIGURE</p><h5>$300.00</h5></body></div>
+  </div>
+    <section id="sec6">
+    <div id="div14"></div>
+    <div id="div15"></div>
+    <div id="div16"></div>
+    </section>
+     <div class="p-container">
+  <div id="p1"> <p>SpaceX Crew Dragon Plush</p><h5>$50.00</h5></div>
+  <div id="p2">  <p>Dragon Adjustable Cap</p><h5>$35.00</h5></div>
+  <div id="p3">  <p>SPACEX IVA SUIT FIGURE</p><h5>$300.00</h5></body></div>
+  </div>
+    <section id="sec7">
+    <div id="div17"></div>
+    <div id="div18"></div> 
+    <div id="div19"></div>
+
+    </section>
+     <div class="p-container">
+  <div id="p1"> <p>SpaceX Crew Dragon Plush</p><h5>$50.00</h5></div>
+  <div id="p2">  <p>Dragon Adjustable Cap</p><h5>$35.00</h5></div>
+  <div id="p3">  <p>SPACEX IVA SUIT FIGURE</p><h5>$300.00</h5></body></div>
+  </div>
+    <section id="sec8">
+    <div id="div20"></h5></div>
+    <div id="div21"></h5></div>
+    <div id="div22"></h5></div>
+    </section>
+     <div class="p-container">
+  <div id="p1"> <p>SpaceX Crew Dragon Plush</p><h5>$50.00</h5></div>
+  <div id="p2">  <p>Dragon Adjustable Cap</p><h5>$35.00</h5></div>
+  <div id="p3">  <p>SPACEX IVA SUIT FIGURE</p><h5>$300.00</h5></body></div>
+  </div>
+    <section id="sec9">
+    <div id="div23"></div>
+    <div id="div24"></div>
+    <div id="div25"></div>
+    </section>
+     <div class="p-container">
+  <div id="p1"> <p>SpaceX Crew Dragon Plush</p><h5>$50.00</h5></div>
+  <div id="p2">  <p>Dragon Adjustable Cap</p><h5>$35.00</h5></div>
+  <div id="p3">  <p>SPACEX IVA SUIT FIGURE</p><h5>$300.00</h5></body></div>
+  </div>
+    <section id="sec10">
+    <div id="div26"></div>
+    <div id="div27"></div>
+    <div id="div28"></div>
+    </section>
+     <div class="p-container">
+  <div id="p1"> <p>SpaceX Crew Dragon Plush</p><h5>$50.00</h5></div>
+  <div id="p2">  <p>Dragon Adjustable Cap</p><h5>$35.00</h5></div>
+  <div id="p3">  <p>SPACEX IVA SUIT FIGURE</p><h5>$300.00</h5></body></div>
+  </div>
+  </div>
+    <div id="button">
+           <button>VIEW ALL TRAINING <div id="b1"></div></button>
+    </div>
+   <footer>
+    <div id="footer">
+        <a href="">FAQs</a>
+        <a href="">Search</a>
+        <a href="">Privacy Policy</a>
+        <a href="">Terms & Conditions</a>
+    </div>
+    <div>© SpaceX Store</div>
+   </footer>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+    AOS.init();
+   </script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    *{
+        margin:0px;
+        padding:0px;
+        /* box-sizing: border-box; */
+    }
+    header{
+        background-color:#00000060;
+        /* opacity: 0.5; */
+        padding:10px;
+        height:100px;
+        position: fixed;
+        top:0px;
+        width:100%;
+
+    }
+    #div1>img{
+        margin-left: 70px;
+         margin-top: 10px;
+         /* background-color:black; */
+    }
+    #span{
+        width:450px;
+        height:40px;
+        margin-left: 800px;
+        position:absolute;
+        top:30px;
+        right:20px;
+        padding: 10px;
+
+    }
+    #span>a{
+        font-size: 18px;
+        margin:0px 15px;
+        color:whitesmoke;
+        font-family: sans-serif;
+        text-decoration: none;
+    }
+    #span>a:hover{
+        color:blue;
+    }
+    #section1>video{
+    background-clip:border-box;
+     height: 1000px;
+     
+    }
+    #section1>#h1{
+        font-size: 60px;
+        font-weight: bold;
+        color:white;
+        position:absolute;
+        top:290px;
+        left:350px;
+      /* font-family: 'Fredoka One', cursive; */
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+    #section1>#h2{
+        font-size: 24px;
+        font-weight: bold;
+        color:white;
+        position:absolute;
+        top:370px;
+        left:420px;
+      /* font-family: 'Fredoka One', cursive; */
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+    #section1>button>a,#sec4>button>a{
+        color:white;
+        background-color: #FF5672;
+        padding:10px;
+        border-radius:30px;
+        position:absolute;
+        top:480px;
+        left:660px;
+        text-decoration: none;
+        width:180px;
+        height:30px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+    #sec4>button>a{
+        position:absolute;
+        top:2850px;
+        left:680px;
+    }
+    #section1>a>input{
+        border:none;
+        font-family: sans-serif;
+        background-color: transparent;
+        color:white;
+        padding:10px;
+        position:absolute;
+        top:560px;
+        left:720px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+    #section1>a>i{
+        position:absolute;
+        top:570px;
+        left:690px;
+        color:white;
+        border:none;
+        font-size: 25px ;
+        /* border:2px solid red; */
+    }
+       #sec2{
+        text-align: center;
+        margin-top: 80px;
+        /* margin-bottom: 40px; */
+       }
+       #sec2>h1{
+        font-size: 40px;
+        font-weight:100px ;
+        font-family: sans-serif;
+
+       }
+       #sec2>p{
+        font-size: 20px;
+        font-weight:100px ;
+        color:rgba(0, 0, 0, 0.777);
+        font-family: sans-serif;
+       }
+       #sec2>hr{
+        color:purple;
+        width: 50px;
+       }
+       #sec3{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+       }
+       #item1,#item2,#item3,#item4,#item5,#item6,#item7{
+             text-align: center; 
+       }
+       #item1{
+        grid-column: 1/5;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 20px;
+       }
+       #item6{
+          grid-column: 2/3;
+          
+       }
+       #item7{
+          grid-column:3/4 ;
+       }
+       #sec3>#item1{
+        margin-top: 130px;
+       }
+       #sec3>div>img{
+        margin-bottom: 15px;
+        width: 80px;
+       }
+        #sec3>div>h1{
+        margin-bottom: 15px;
+        color:rgba(0, 0, 0, 0.779);
+        font-family: sans-serif;
+       }
+          #sec3>div>p{
+        color:rgba(0, 0, 0, 0.727);
+        font-family: sans-serif;
+        padding:5px;
+
+       }
+       #hr,#hr1,#hr2{
+        background-color: rgba(128, 0, 128, 0.675);
+        height: 3px;
+        margin-top: 50px;
+        margin-left:80px;
+        margin-right: 80px;
+        border-radius: 1000px;
+       }
+       #hr2{
+        margin-top: 150px ;
+       }
+       #sec4>h1{
+        margin-top: 30px;
+        font-size: 30px;
+        color:rgba(0, 0, 0, 0.795);
+        font-family: sans-serif;
+        text-align: center;
+       }
+       #sec4>p{
+        margin-top:15px;
+        text-align: center;
+        color:black;
+       }
+       #sec4>img{
+         height: 520px;
+       padding-left: 400px;
+       margin-top: 50px;
+       margin-bottom: 20px;
+       }
+       #sec5{
+        margin-top: 60px;
+        display:grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(2,1fr);
+       }
+       #item8{
+        grid-column: 3/4;
+        font-size: 30px;
+        text-align: center;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin-bottom: 60px;
+       }
+       #item9>h1,#item10>h1,#item11>h1{
+        font-size: 18px;
+        color:rgba(0, 0, 0, 0.656);
+        margin-top: 40px;
+       }
+        #item9>img,#item10>img,#item11>img{
+        width:50px;
+       }
+       #item9,#item10,#item11{
+        display:flex;
+        gap:10px;
+       }
+       #item9{
+        grid-column: 2/3;
+       }
+        #item10{
+        grid-column: 3/4;
+       }
+        #item11{
+        grid-column:4/5 ;
+       }
+          #footer>#div13>p{
+        background-color: #FF5672;
+        text-align: center;
+        color:white;
+        font-size: 16px;
+        height: 30px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    #chat{
+            position: fixed;
+            right: 10px;
+            bottom: 20px;
+            font-size: 100px;
+            color:magenta;
+    }
+     
+     
+    </style>
+</head>
+<body>
+    <header>
+        <div ID="div1">
+            <img height="80px" wight="800px" src="https://knight-bite.com/res/kb_logo_new_2.png" alt="logo">
+        <div>
+        <span id="span">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./menu.html">Menu</a>
+            <a href="./franchise.html">Franchise</a>
+        </span>
+    </header>
+    <section id="section1">
+        <!-- <video src="https://www.youtube.com/embed/VBIy34fawKY"></video> -->
+         <video src="./franchise_playback.mp4" autoplay muted></video>
+         <h1 id="h1">FRANCHISE WITH NIGHT BIGHT</h1>
+         <h1 id="h2">GET STARTED WITH THE MODERN WAY OF DOING BUSINESS</h1>
+        <button><a href="https://docs.google.com/forms/d/e/1FAIpQLScbn9-k82FPvK7vaPUOtnSUNMtcsTlkdxPIdIAG_d7HvftUlA/viewform">APPLY NOW</a></button>
+        <a href="./franchise_playback.mp4" target="_self">  
+        <input type="submit" value="Watch video">
+        <i class="fa-solid fa-circle-play"></i>
+        </a>
+    </section>
+    <section id="sec2">
+        <h1>Mission and Vision</h1><br>
+        <p>Our Mission is to deliver the best food with <br> the ultimate customer service.</p> <br><br>
+        <p>Our Vision is to be the most favourite food chain brand in the <br> country and world.</p>
+        <hr>
+    </section>
+    <div id="hr">
+    </div>
+    <section id="sec3">
+        <div id="item1">
+            Key Benefits Of Knight Bite Franchise
+        </div>
+        <div id="item2">
+            <img src="https://knight-bite.com/res/franchise/1.svg" alt="" class="imgs">
+            <h1>LOW INVESTMENT</h1>
+            <p>No need of prime roadside location, interior <br>decor. A office desk and any well hygenic <br> kitchen space is enough.</p>
+        </div>
+        <div id="item3">
+            <img src="https://knight-bite.com/res/franchise/2.svg" alt="" class="imgs">
+             <h1>LOW MAINTAINANCE</h1>
+             <p>The hygiene, rent, staff and storage is the <br>only maintenance the franchise would have <br> to focus on.</p>
+        </div>
+        <div id="item4">
+            <img src="https://knight-bite.com/res/franchise/3.svg" alt="" class="imgs">
+                    <h1>BASIC SKILLSET</h1>
+                    <p>Anyone with basic training can step into the <br> shoes of the staff. No serious training is <br> required. Materials are sent.</p>
+        </div>
+        <div id="item5">
+            <img src="https://knight-bite.com/res/franchise/4.svg" alt="" class="imgs">
+                    <h1>IN-HOUSE POS</h1>
+                    <p>POS will be provided to manage and track <br>orders with ease. All the applications are <br> interconnected to the POS. Moreover call <br> centre customer support will also be  <br>provided.  </p>
+        </div>
+        <div id="item6">
+            <img src="https://knight-bite.com/res/franchise/4.svg" alt="" class="imgs">
+                <h1>GOOD PROFIT MARGIN</h1>
+                <p>Establishment running cost is much lesser <br> than traditional restaurant. You are in for a <br> good profit margin.</p>
+        </div>
+        <div id="item7">
+            <img src="https://knight-bite.com/res/franchise/pandemic_ic.svg" alt="" class="imgs">
+                <h1>PANDEMIC FRIENDLY</h1>
+                <p>Knight Bite is the most successful business  <br>to run hassle-free even during the Pandemic.  <br> The faith in Knight Bite has taken a hit due <br> to its high efficiency and extraordinary <br> sustainability</p>
+        </div>
+    </section>
+    <div id="hr1">
+
+    </div>
+    <section id="sec4">
+        <h1>Apply Here</h1>
+        <p>Request for initial meeting</p>
+        <img src="https://knight-bite.com/res/franchise/apply-grid.png" alt="" >
+         <button><a href="https://docs.google.com/forms/d/e/1FAIpQLScbn9-k82FPvK7vaPUOtnSUNMtcsTlkdxPIdIAG_d7HvftUlA/viewform">APPLY NOW</a></button>
+    </section>
+     <div id="hr2">
+
+    </div>
+    <section id="sec5">
+        <div id="item8">
+            Franchise Queries
+        </div>
+        <div id="item9">
+            <img src="	https://www.knight-bite.com/res/franchise/footer-1.svg" alt="">
+            <h1>Franchise Brochure</h1>
+        </div>
+        <div id="item10">
+            <img src="https://www.knight-bite.com/res/franchise/footer-3.svg" alt="">
+            <h1>08047192034</h1>
+        </div>
+        <div id="item11">
+            <img src="https://www.knight-bite.com/res/franchise/footer-2.svg" alt="">
+            <h1>info@knight-bite.com</h1>
+        </div>
+    </section>  
+    <footer id="footer">
+    <div  id="div13">
+    <p>&copy; Copyright 2025. Knight Bite Foods Pvt. Ltd. All Rights Reserved</p>
+    </div>
+    <div id="chat"><i class="fa-solid fa-message" style="color: #c164e3;"></i></div>
+    </footer>  
+</body>
+</html>

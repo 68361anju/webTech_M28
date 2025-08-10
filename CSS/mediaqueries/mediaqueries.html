@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            display: flex;
+            justify-content: space-around;
+            background-color: #000050;
+            color:white;
+            padding:10px;
+            border-radius: 10px;
+        }
+        nav{
+            width: 600px;
+            display:flex;-ms-layout-grid: .0o;
+            justify-content: space-between;
+            margin-left: 400px;
+        }
+        nav>a{
+           color:white;
+           text-decoration: none;
+           font-size: 20px;
+        }
+        .menuicon{
+            display:none;
+        }
+        @media only screen and(max-width:600px)
+        {
+          /* <=600 */
+          .menuicon{
+            display: flex;
+          }
+          nav{
+            display:none;
+          }
+        }
+        @media only screen and (min-width:601px)
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img width="100px" height="100px" src="https://cdn.pixabay.com/photo/2024/09/21/15/07/eiffel-tower-9064240_1280.jpg" alt="logo">
+        <nav>
+            <a href="">home</a>
+            <a href="">about</a>
+            <a href="">login</a>
+            <a href="">franchise</a>
+        </nav>
+        <i class="fa-solid fa-bars"></i>
+    </header>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ut, libero distinctio atque ab rem suscipit officiis nisi explicabo voluptatem dolore cumque sequi, qui a consequatur? Aut tempora quos voluptatibus!</p>
+    <div id="cards">
+        <div class="class">
+            <img height="150px" width="150px" src="https://cdn.pixabay.com/photo/2022/09/16/16/57/girl-7459130_1280.jpg" alt="">
+            <h3>title</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At distinctio amet placeat provident dolorum perspiciatis incidunt similique, et excepturi neque nihil quisquam accusantium esse a aliquid enim repudiandae. Eaque, soluta!</p>
+            <button>submit</button>
+            
+        </div>
+    </div>
+</body>
+</html>

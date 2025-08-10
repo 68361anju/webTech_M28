@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+      .names,.parent{
+        display:flex;
+        justify-content: space-around;
+        font-size: 20px;
+        font-weight: bold;
+        padding:10px;
+     }
+     .parent>div{
+        background-color: magenta;
+        height: 200px;
+        width: 200px;
+        transition: all 2s;
+
+     }
+     .parent>#div1:hover{
+        transform:scale(0.5);
+     }
+     .parent>#div2:hover{
+        transform:scale(1.5,0.8);
+     }
+     .parent>#div3:hover{
+        transform: scaleX(0.5);
+     }
+     .parent>#div4:hover{
+        transform: scaleY(0.5);
+     }
+       #diva:hover{
+        transform:rotate(45deg);
+     }
+     #divb:hover{
+        transform:rotate(-45deg);
+     }
+     #divc:hover{
+        transform: rotatex(360deg);
+     }
+     #divd:hover{
+        transform: rotateY(360deg);
+     }
+     #dive:hover{
+        transform: translate(2);
+     }
+     #divf:hover{
+        transform: translate(2,3);
+     }
+     #divg:hover{
+        transform: translate(2);
+     }
+     #divh:hover{
+        transform: translate(3);
+     }
+
+
+
+   </style>
+</head>
+<body>
+    <h1>Transform property</h1>
+    <h2><u>scale:-</u></h2>
+    <div class="parent">
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <div id="div4"></div>
+    </div>
+    <div class="names">
+        <div id="div5">scale(0.5)</div>
+        <div id="div6">scale(1.5,0.8)</div>
+        <div id="div7">scale-x(1.5)</div>
+        <div id="div8">scale-y(1.5)</div>
+    </div>
+    <hr><hr>
+    <br><br><br><br>
+       <h2><u>rotate:-</u></h2>
+    <div class="parent">
+        <div id="diva"></div>
+        <div id="divb"></div>
+        <div id="divc"></div>
+        <div id="divd"></div>
+    </div>
+    <div class="names">
+        <div id="div9">rotate(45deg)</div>
+        <div id="div10">rotate(-45deg)</div>
+        <div id="div11">rotate-x(360deg)</div>
+        <div id="div12">rotate-y(360deg)</div>
+    </div>
+        <hr><hr>
+    <br><br><br><br>
+       <h2><u>translate:-</u></h2>
+    <div class="parent">
+        <div id="dive"></div>
+        <div id="divf"></div>
+        <div id="divg"></div>
+        <div id="divh"></div>
+    </div>
+    <div class="names">
+        <div id="div9">translate(2)</div>
+        <div id="div10">translate(2,3)</div>
+        <div id="div11">translate-x(2)</div>
+        <div id="div12">translate-y(3)</div>
+    </div>
+
+</body>
+</html>

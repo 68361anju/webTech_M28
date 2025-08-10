@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grid-container{
+            height: 300px;
+           display:grid;
+           grid-template-columns: repeat(3,1fr);
+           grid-template-rows: repeat(4,1fr);
+           gap:10px;
+        }
+        #grid-container>div{
+           border:2px solid red;
+           background-color: blue;
+           color:white;
+        }
+        #item1{
+            grid-row: 1/2;
+            grid-column: 1/4;
+        }
+        #item2{
+            grid-row: 2/4;
+            grid-column: 1/2;
+        }
+        #item3{
+            grid-row: 2/3;
+            grid-column: 2/4;
+        }
+        #item6{
+            grid-column: 1/4;
+        }
+        header{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+        }
+        header>nav>a{
+            text-decoration: none;
+            color:black;
+            padding: 10px;
+            border-radius: 10px;         
+        }
+        header>nav{
+            width: 50%;
+            display:flex;
+            justify-content: space-between;           
+        }
+        header>nav>a:hover{
+            background-color: white;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid-container">
+        <div id="item1">
+            <header>
+                <img src="#" alt="logo">
+                <nav>
+                    <a href="">menue1</a>
+                    <a href="">menue2</a>
+                    <a href="">menue3</a>
+                    <a href="">menue4</a>
+                </nav>
+            </header>
+        </div>
+        <div id="item2">Sidebar</div>
+        <div id="item3">content1</div>
+        <div id="item4">content2</div>
+        <div id="item5">content3</div>
+        <div id="item6">footer</div>
+    </div>
+</body>
+</html>

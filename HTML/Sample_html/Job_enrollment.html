@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Enrollment</title>
+    <link rel="stylesheet" href="">
+    <style>
+        body{
+           font-family: calibri, sans-serif; 
+        }
+       div{
+        background-color: lightgray;
+        width:400px;
+        border-radius: 5px;
+        padding:10px;
+        box-shadow: 0 0 10px gray;
+       } 
+       input,textarea, select{
+        border: none;
+        font-size: 20px;
+        margin: 5px;
+        border-radius: 5px;
+       }
+       .button {
+           background-color: black;
+           color:white;
+       }
+    </style>
+</head>
+<body>
+ <div>
+    <h1>Job Enrollment</h1>
+    <form action="">
+        <label for="user">Username</label><br>
+        <input type="text" id="user" placeholder="Enter Username"><br>
+        <label for="pass">Password</label><br>
+        <input type="password" id="pass" placeholder="Enter password"><br>
+        <label for="E">Email</label><br>
+        <input type="email" id="E" placeholder="Enter Email"><br>
+        <label for="A">About Yourself</label><br>
+        <textarea rows="3" cols="25" name="address" id="A" placeholder="Bio"></textarea><br>
+        <label for="Desig">Designation</label><br>
+        <select name="Designation" id="Desig">
+            <option value="1">SOFTWARE ENGINEER</option>
+             <option value="2">ASSOCIATE ENGINEER</option>
+              <option value="3">WEB DEVELOPER ENGINEER</option>
+               <option value="4">SOFTWARE ASOOCIATE ENGINEER</option>
+        </select><br><br>
+        <label for="dob">Date_Of_Birth</label>
+        <input type="date" id="dob"><br><br>
+        <label for="Your">Your Img</label>
+        <input type="file" id="Your"><br><br>
+        <label for="mob">Mobile Number</label><br>
+        <input type="number" id="mob" placeholder="Enter Mobile Number"><br><br>
+        <label for="">Programming Level</label><br>
+        <input type="checkbox" value="Beginner" id="pro">
+        <label for="pro">Beginner</label>
+        <input type="checkbox" value="intermediate" id="inter">
+        <label for="inter">intermediate</label>
+        <input type="checkbox" value="Professional" id="pr">
+        <label for="pr">Professional</label><br><br>
+        <label>Expertise in</label><br>
+        <input type="radio" name="Expertise" value="Backend" id="Backend">
+        <label for="Backend">Backend</label>
+        <input type="radio" name="Expertise" value="Frontend"  id="Frontend">
+        <label for="Frontend">Frontend</label>
+        <input type="radio" name="Expertise" value="Database"  id="Database">
+        <label for="Database">Database</label>
+        <input type="radio" name="Expertise" value="Fullstack" id="Fullstack">
+        <label for="Fullstack">Fullstack</label><br><br>
+        <label for="url">Website Url</label><br>
+        <input type="url" value="url" placeholder="your website" ><br><br>
+        <input class="button" type="submit" value="Enroll">
+        <input class="button" type="reset" value="reset">
+
+
+    </form>
+ </div>
+</body>
+</html>

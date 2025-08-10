@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div+h1{
+            color:blue;
+        }
+        div+p{ 
+            color:red;
+            background-color: aqua;
+            
+       }   </style>
+</head>
+<body>
+    <h1>Adjacent sibling combinator selectors</h1>
+    <p>It is used to target specified tag only if it is adjacent sibling<b>(it should be present immediatly after the closing tag).</b> </p>
+    <p>it is represented with the <b>+</b> symbol.</p>
+    <p>example:</p>
+
+   <div>
+    <h1>Direct member of div tag.</h1>
+    <p>Direct member of div tag.</p>
+    <span>
+        <h1>It is the indirect member of div tag.</h1>
+        <p>It is the indirect member of div tag.</p>
+    </span>
+   </div>
+   <p>Adjacent sibling of div tag</p>
+   <p>sibling of div tag</p>
+</body>
+</html>

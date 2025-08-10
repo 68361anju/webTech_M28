@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #calcu-container{
+            background-color: black;
+            color:white;
+            height: 700px;
+            width: 600px;
+            padding:10px;
+            border-radius: 20px;
+
+        }
+        header>i{
+            font-size: 30px;
+        }
+        header{
+            display:flex;
+            justify-content: space-around;
+              padding:20px;
+        }
+        h1{
+            font-size: 20px;
+        }
+        #calcu-bottom{
+            margin-top: 230px;
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(6,1fr);
+        }
+        button{
+            border-radius: 100px;
+            height: 60px;
+            background-color:gray ;
+            color:white;
+            font-weight: bolder;
+            font-size: 24px;
+        }
+        #input{
+            grid-column: 1/5;
+             border-radius: 100px;
+
+        }
+        #button1,#button2,#button3,#button4,#button8,#button12,#button16,#button17,#button20{
+            color:orange;
+        }
+
+    </style>
+</head>
+<body>
+   <section id="calcu-container">
+     <header>
+         <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        <h1>calculator</h1>
+        <h1>converter</h1>
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+    </header>
+    <div id="space"></div>
+    <section id="calcu-bottom">
+     <input type="text" id="input">
+     <button id="button1">AC</button>
+     <button id="button2"><i class="fa-solid fa-circle-xmark"></i></button>
+     <button id="button3">%</button>
+     <button id="button4">/</button>
+     <button id="button5">7</button>
+     <button id="button6">8</button>
+     <button id="button7">9</button>
+     <button id="button8">*</button>
+     <button id="button9">4</button>
+     <button id="button10">5</button>
+     <button id="button11">6</button>
+     <button id="button12">-</button>
+     <button id="button13">1</button>
+     <button id="button14">2</button>
+     <button id="button15">3</button>
+     <button id="button16">+</button>
+     <button id="button17"> <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+     <button id="button18">0</button>
+     <button id="button19">.</button>
+     <button id="button20">=</button>
+    </section>
+   </section>
+</body>
+</html>

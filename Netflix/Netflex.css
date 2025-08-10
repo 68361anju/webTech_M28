@@ -1,0 +1,326 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: black;
+}
+
+#page1 {
+    background-image: url(https://cdn.wallpapersafari.com/24/74/zgeTuV.jpg);
+    height: 600px;
+
+}
+
+#netflix {
+    height: 50px;
+    width: 110px;
+    position: relative;
+    left: 100px;
+}
+
+#lang {
+    position: relative;
+    left: 800px;
+    padding: 5px 12px 5px 12px;
+    border-radius: 5px;
+    opacity: 0.5px;
+    color: white;
+    background-color: rgb(40, 35, 35);
+}
+
+#signin {
+    position: relative;
+    left: 800px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+#head1,
+#head2 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 50px;
+    position: relative;
+    left: 400px;
+    top: 100px;
+}
+
+#head3 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    position: relative;
+    left: 480px;
+    top: 120px;
+}
+
+#head4 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    position: relative;
+    left: 410px;
+    top: 150px;
+}
+
+#email {
+    position: relative;
+    left: 400px;
+    top: 200px;
+    width: 250px;
+    padding: 10px 20px 15px 20px;
+    border-radius: 5px;
+    opacity: 0.5px;
+    color: white;
+    border: white 1px solid;
+    background-color: rgb(40, 35, 35);
+}
+
+#getstarted {
+
+    position: relative;
+    left: 400px;
+    top: 202px;
+    width: 180px;
+    padding: 6px 18px 10px 20px;
+    border-radius: 5px;
+    opacity: 0.5px;
+    color: white;
+    border: white 1px solid;
+    background-color: rgb(215, 24, 24);
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.accordion-item>.accordion-header>.accordion-button {
+    background-color: gray;
+    color: white;
+    font-size: 28px;
+    width: 1000px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.acordian-body {
+    width: 1000px;
+    margin-left: 100px;
+    margin-top: 300px;
+}
+
+/* #accordian{
+    background-color: black;
+} */
+
+#parent1 {
+    width: 1200px;
+    /* width of one image */
+    height: 220px;
+    overflow: hidden;
+}
+
+#image {
+    display: flex;
+    width: calc(300px * 4);
+    /*total width */
+    animation: scrollImages 8s infinite;
+    gap: 20px;
+}
+
+.card1 img {
+    width: 300px;
+    height: 220px;
+    object-fit: cover;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-left: 500px;
+}
+
+@keyframes scrollImages {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-300px);
+    }
+
+    50% {
+        transform: translateX(-600px);
+    }
+
+    75% {
+        transform: translateX(-900px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.card {
+    border: 2px solid red;
+    width: 230px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 30px;
+    background-image: linear-gradient(rgb(89, 30, 119), rgb(202, 32, 154));
+
+}
+
+.card>p {
+    color: white;
+}
+
+.card>h5 {
+    color: rgb(180, 210, 43);
+}
+
+#parent {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-left: 110px;
+}
+
+#footer {
+    background-color: black;
+    height: 500px;
+}
+
+#para1 {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+#emailid {
+    position: relative;
+    left: 100px;
+    top: 25px;
+    width: 500px;
+    padding: 10px 20px 15px 20px;
+    border-radius: 5px;
+    opacity: 0.5px;
+    color: white;
+    border: white 1px solid;
+    background-color: rgb(40, 35, 35);
+}
+#start{
+    position: relative;
+    left: 800px;
+    top: 25px;
+    width: 180px;
+    padding: 7px 18px 11px 20px;
+    border-radius: 5px;
+    opacity: 0.5px;
+    color: white;
+    border: white 1px solid;
+    background-color: rgb(215, 24, 24);
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+#div1{
+    display:grid;
+    grid-template-columns: 4,1fr;
+    grid-template-rows: 4,1fr;
+    position:relative;
+    left:50px;
+    top:45px;
+}
+#link1{
+    grid-row:1/2 ;
+    grid-column:1/2 ;
+}
+#link2{
+    grid-row:2/3 ;
+    grid-column:1/2 ;
+}
+#link3{
+    grid-row:3/4 ;
+    grid-column:1/2 ;
+}
+#link4{
+    grid-row:4/5 ;
+    grid-column:1/2 ;
+}
+#div2{
+    display:grid;
+    grid-template-columns: 4,1fr;
+    grid-template-rows: 4,1fr;
+    position:relative;
+    left:200px;
+    bottom:50px;
+}
+#link1{
+    grid-row:1/2 ;
+    grid-column:1/2 ;
+}
+#link2{
+    grid-row:2/3 ;
+    grid-column:1/2 ;
+}
+#link3{
+    grid-row:3/4 ;
+    grid-column:1/2 ;
+}
+#link4{
+    grid-row:4/5 ;
+    grid-column:1/2 ;
+}
+#div3{
+    display:grid;
+    grid-template-columns: 4,1fr;
+    grid-template-rows: 4,1fr;
+    position:relative;
+    left:400px;
+    bottom:144px;
+}
+#link1{
+    grid-row:1/2 ;
+    grid-column:1/2 ;
+}
+#link2{
+    grid-row:2/3 ;
+    grid-column:1/2 ;
+}
+#link3{
+    grid-row:3/4 ;
+    grid-column:1/2 ;
+}
+#link4{
+    grid-row:4/5 ;
+    grid-column:1/2 ;
+}
+#div4{
+    display:grid;
+    grid-template-columns: 4,1fr;
+    grid-template-rows: 4,1fr;
+    position:relative;
+    left:600px;
+    bottom:240px;
+}
+#link1{
+    grid-row:1/2 ;
+    grid-column:1/2 ;
+}
+#link2{
+    grid-row:2/3 ;
+    grid-column:1/2 ;
+}
+#link3{
+    grid-row:3/4 ;
+    grid-column:1/2 ;
+}
+#division{
+    position:relative;
+    left:100px;
+}

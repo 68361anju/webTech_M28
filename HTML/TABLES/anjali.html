@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nested Tables</title>
+    <style>
+        table {
+            border: 3px solid red;
+            border-collapse: collapse;
+            margin: 5px;
+        }
+        td {
+            border: 2px solid blue;
+            padding: 10px;
+        }
+        .nested {
+            border: 2px solid orange;
+        }
+        .list {
+            border: 2px solid purple;
+        }
+        .image {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td colspan="2"><strong>Container Table</strong></td>
+    </tr>
+    <tr>
+        <td>
+            <!-- Nested Table 1 -->
+            <table class="nested">
+                <tr>
+                    <td colspan="2">Nested Table 2</td>
+                </tr>
+                <tr>
+                    <td>Column 1</td>
+                    <td>Column 2</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Our First Table Nested Within</td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <!-- Nested Table 2 with List -->
+            <table class="list">
+                <tr>
+                    <td><strong>Nested Table 2</strong></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>List Object 1</li>
+                            <li>List Object 2</li>
+                            <li>List Object 3</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <!-- Nested Table 3 -->
+            <table class="nested">
+                <tr>
+                    <td><strong>Nested Table 3</strong></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Nested Table Demo Continued</a></td>
+                </tr>
+            </table>
+        </td>
+        <td class="image">
+            <!-- Nested Table 4 with Image -->
+            <table class="nested">
+                <tr>
+                    <td><strong>Nested Table 4</strong></td>
+                </tr>
+                <tr>
+                    <td><img src="" alt="HTML" width="100"></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

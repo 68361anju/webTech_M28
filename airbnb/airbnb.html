@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+    #sec1{
+        background-color: whitesmoke;
+        position: fixed;
+        top:0px;
+        width:100%;
+        height: 210px;
+    }
+    header{
+    display:flex;
+    justify-content: space-around;
+    /* border:2px solid red; */
+    height: 80px;
+    padding:10px;
+     }
+     #middle-conatiner{
+        /* border:2px solid red; */
+        width: 500px;
+        display:flex;
+        justify-content: space-around;
+        margin-left: 200px;
+
+     }
+    #middle-conatiner>p{
+      margin-top: 30px;
+        font-size: 16px;
+        font-family: sans-serif;
+
+     }
+     #last-container{
+         /* border:2px solid red; */
+         width: 300px;
+          display:flex;
+        justify-content: space-around;
+        padding:20px;
+        margin-left: 250px;
+     }
+     #last-container>p{
+        margin-top: 8px;
+        font-size: 16px;
+        font-family: sans-serif;
+     }
+     #glob,#lines{
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0.238);
+        border-radius: 50%;
+     }
+     #glob>img,#lines>img{
+        margin-top: 10px;
+     }
+     #rounder{
+        /* border:2px solid red; */
+        margin-top: 10px;
+        display:flex;
+        justify-content: space-between;
+        height: 28px;width: 800px;
+        margin-left: 300px;
+        padding:20px;
+        border-radius: 50px;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.59);
+     }
+     #rounder>#div1:hover{
+         border-radius: 50px;
+         background-color: rgba(0, 0, 0, 0.14);
+     }
+     #rounder>#div5>i{
+        margin-right:0px ;
+        background-color: magenta;
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+        font-size: 20px;
+        color:white
+     }
+     #div5{
+       margin-top: -15px;
+     }
+      #first{
+         margin-top:250px;
+         position:relative;
+      }
+      #first>#head1{
+        font-size: 20px;
+        font-family: sans-serif;
+       position:absolute;
+       left:60px;
+      }
+      #first>#head1>i{
+        font-size: 25px;
+        font-family: sans-serif;
+       position:absolute;
+       top: 2px;
+      }
+      #first>#head2{
+        font-size: 20px;
+        font-family: sans-serif;
+       position:absolute;
+       top: 330px;
+       left:60px;
+      }
+      #first>#head2>i{
+        font-size: 25px;
+        font-family: sans-serif;
+       position:absolute;
+       top: 2px;
+      }
+       #first>#head3{
+        font-size: 20px;
+        font-family: sans-serif;
+       position:absolute;
+       top: 620px;
+       left:60px;
+      }
+      #first>#head3>i{
+        font-size: 25px;
+        font-family: sans-serif;
+       position:absolute;
+       top: 2px;
+      }
+     #first>#sec2{
+       position:absolute;
+      z-index: -1;
+       left:30px;
+       top: 50px;
+        display:flex;
+        justify-content: space-around;
+        gap:5px;
+        margin-left: 40px;
+         margin-right: 40px;
+     
+     }
+    #sec2>div>img{
+        border-radius: 20px;  
+      }
+      .picture{
+         padding:10px;
+        position:relative;
+      }
+       .picture>i{
+        position:absolute;
+        left:160px ;
+        top:25px;
+        color: white;
+        font-size: 20px;
+      }
+      .picture>p:first-of-type{
+        position:absolute;
+        top:25px;
+        left: 25px;
+        height: 8px;
+        font-size: 14px;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+         padding-bottom:10px;
+        /* border:2px solid red; */
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.792);
+      }
+      #first{
+         margin-top: 250px;
+         position:relative;
+      }
+      #first>h1{
+        font-size: 25px;
+        font-family: sans-serif;
+       position:absolute;
+       left:80px;
+      }
+       #first>#sec3{
+       position:absolute;
+       z-index: -1;
+       left:30px;
+       top: 350px;
+        display:flex;
+        justify-content: space-around;
+        gap:5px;
+        margin-left: 40px;
+         margin-right: 40px;
+       }
+       #sec3>div>img{
+        border-radius: 20px;  
+      }
+      .picture{
+         padding:10px;
+        position:relative;
+      }
+       .picture>i{
+        position:absolute;
+        left:160px ;
+        top:25px;
+        color: white;
+        font-size: 20px;
+      }
+      .picture>p:first-of-type{
+        position:absolute;
+        top:25px;
+        left: 25px;
+        height: 8px;
+        font-size: 14px;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+         padding-bottom:10px;
+        /* border:2px solid red; */
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.792);
+      }
+      #first>#sec4{
+       position:absolute;
+      z-index: -1;
+       left:30px;
+       top: 650px;
+        display:flex;
+        justify-content: space-around;
+        gap:5px;
+        margin-left: 40px;
+         margin-right: 40px;
+       }
+       #sec4>div>img{
+        border-radius: 20px;  
+      }
+      .picture{
+         padding:10px;
+        position:relative;
+      }
+       .picture>i{
+        position:absolute;
+        left:160px ;
+        top:25px;
+        color: white;
+        font-size: 20px;
+      }
+      .picture>p:first-of-type{
+        position:absolute;
+        top:25px;
+        left: 25px;
+        height: 8px;
+        font-size: 14px;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+         padding-bottom:10px;
+        /* border:2px solid red; */
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.792);
+      }
+      #footer{
+        position:relative;
+        top: 950px;
+        left: 50px;
+      }
+      #footer>p:first-of-type{
+        font-weight: bold;
+        font-size: 30px;
+      }   
+       #footer>p:nth-of-type(2){
+        font-weight: bold;
+        font-size: 20px;
+      }    
+      .paragraph{
+        padding: 50px;
+        margin-left: -100px;
+        width:90%;
+        display:flex;
+        justify-content:space-around;
+      }
+      #demo,#demo2, #demo3,#demo4{
+        margin-top: -50px;
+      }
+      #footer2{
+        display:flex;
+        justify-content: space-around;
+        
+      }
+      #line1{
+            display:flex;
+            flex-direction: column;
+            position:relative;
+            left:60px;
+            top:70px;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        .anchor{
+            text-decoration: none;
+            color:rgb(50, 49, 49);   
+        }
+        .anchorhead{
+            text-decoration: none;
+            font-size: 15px;
+            color:black;
+        }
+        #line2{
+          margin-top: 160px;
+            display:flex;
+            flex-direction: column;
+            position:relative;
+            left:200px;
+            bottom:100px;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        .anchor{
+            text-decoration: none;
+            color:rgb(78, 75, 75);  
+        }
+        .anchorhead{
+            text-decoration: none;
+            font-size: 15px;
+            color:black;
+        }
+        #line3{
+            display:flex;
+            flex-direction: column;
+            position:relative;
+            left:400px;
+            top:50px;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        .anchor{
+            text-decoration: none;
+            color:rgb(78, 75, 75);
+            
+        }
+        .anchorhead{
+            text-decoration: none;
+            font-size: 15px;
+            color:black;
+        }
+        #list{
+            display: flex;
+            justify-content: space-around;
+            width:400px;
+            position:relative;
+            left:100px;
+            bottom:30px;
+        }
+        #socialmedia{
+            display: flex;
+            justify-content: space-around;
+            width:400px;
+        }
+        .english{
+            font-size: 12px;
+            position: relative;
+            bottom:10px;
+        }
+        #socialmedia{
+            position: relative;
+            left:800px;
+            bottom:60px;
+        }
+        #span{
+            font-size: 14px;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <section id="sec1">
+        <header>
+        <img height="80px" width="150px"  src="https://tse1.mm.bing.net/th/id/OIP.pSwTSsZJpLzz3zY53OAyIwHaEK?pid=Api&P=0&h=180" alt="">
+        <div id="middle-conatiner">
+             <img height="80px" width="150px" src="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-search-bar-icons/original/4aae4ed7-5939-4e76-b100-e69440ebeae4.png?im_w=240" alt="">
+            <p>Homes</p>
+            <img height="80px" width="150px" src="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-search-bar-icons/original/e47ab655-027b-4679-b2e6-df1c99a5c33d.png?im_w=240" alt="">
+            <p>Experiences</p>
+            <img height="80px" width="150px" src="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-search-bar-icons/original/3d67e9a9-520a-49ee-b439-7b3a75ea814d.png?im_w=240" alt="">
+            <p>Services</p>
+        </div>
+        <div id="last-container">
+            <p>Become a host</p>
+           <div id="glob"> <img height="20px" width="40px" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgYXJpYS1oaWRkZW49InRydWUiIHJvbGU9InByZXNlbnRhdGlvbiIgZm9jdXNhYmxlPSJmYWxzZSIgc3R5bGU9ImRpc3BsYXk6IGJsb2NrOyBoZWlnaHQ6IDE2cHg7IHdpZHRoOiAxNnB4OyBmaWxsOiBjdXJyZW50Y29sb3I7Ij48cGF0aCBkPSJNOCAuMjVhNy43NyA3Ljc3IDAgMCAxIDcuNzUgNy43OCA3Ljc1IDcuNzUgMCAwIDEtNy41MiA3LjcyaC0uMjVBNy43NSA3Ljc1IDAgMCAxIC4yNSA4LjI0di0uMjVBNy43NSA3Ljc1IDAgMCAxIDggLjI1em0xLjk1IDguNWgtMy45Yy4xNSAyLjkgMS4xNyA1LjM0IDEuODggNS41SDhjLjY4IDAgMS43Mi0yLjM3IDEuOTMtNS4yM3ptNC4yNiAwaC0yLjc2Yy0uMDkgMS45Ni0uNTMgMy43OC0xLjE4IDUuMDhBNi4yNiA2LjI2IDAgMCAwIDE0LjE3IDl6bS05LjY3IDBIMS44YTYuMjYgNi4yNiAwIDAgMCAzLjk0IDUuMDggMTIuNTkgMTIuNTkgMCAwIDEtMS4xNi00LjdsLS4wMy0uMzh6bTEuMi02LjU4LS4xMi4wNWE2LjI2IDYuMjYgMCAwIDAtMy44MyA1LjAzaDIuNzVjLjA5LTEuODMuNDgtMy41NCAxLjA2LTQuODF6bTIuMjUtLjQyYy0uNyAwLTEuNzggMi41MS0xLjk0IDUuNWgzLjljLS4xNS0yLjktMS4xOC01LjM0LTEuODktNS41aC0uMDd6bTIuMjguNDMuMDMuMDVhMTIuOTUgMTIuOTUgMCAwIDEgMS4xNSA1LjAyaDIuNzVhNi4yOCA2LjI4IDAgMCAwLTMuOTMtNS4wN3oiPjwvcGF0aD48L3N2Zz4=" alt=""></div>
+            <div id="lines"><img height="20px" width="40px" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgYXJpYS1oaWRkZW49InRydWUiIHJvbGU9InByZXNlbnRhdGlvbiIgZm9jdXNhYmxlPSJmYWxzZSIgc3R5bGU9ImRpc3BsYXk6IGJsb2NrOyBmaWxsOiBub25lOyBoZWlnaHQ6IDE2cHg7IHdpZHRoOiAxNnB4OyBzdHJva2U6IGN1cnJlbnRjb2xvcjsgc3Ryb2tlLXdpZHRoOiAzOyBvdmVyZmxvdzogdmlzaWJsZTsiPjxnIGZpbGw9Im5vbmUiPjxwYXRoIGQ9Ik0yIDE2aDI4TTIgMjRoMjhNMiA4aDI4Ij48L3BhdGg+PC9nPjwvc3ZnPg==" alt=""></div>
+        </div>
+    </header>
+    <div id="rounder">
+       <div id="div1">Where <br> Search Destinations</div>
+       <div id="div2"> Check in <br> Add dates</div>
+       <div id="div3">Check out <br> Add dates</div>
+       <div id="div4">who <br> Add guests</div>
+       <div id="div5"><i class="fa-solid fa-magnifying-glass"></i></div>
+    </div>
+    </section>
+   <section id="first">
+      <h1 id="head1">Popular home in Bengaluru<i class="fa-solid fa-greater-than"></i></h1>
+     <section id="sec2">
+       <div class="picture"><p>Guest Favourite</p><i class="fa-solid fa-heart"></i><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/hosting/Hosting-1245681640386906473/original/b00cca4b-e829-42e3-aaef-593c69995ba3.jpeg?im_w=480" alt=""><p>Apartment in <br> Banglore Urban </p><p>$6500 for two nights</p></div>
+       <div class="picture"><p>Guest Favourite</p><i class="fa-solid fa-heart"></i><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/hosting/Hosting-1374894139499865418/original/f44af654-fbe8-465e-a58f-7aa681fe50e1.jpeg?im_w=480" alt=""><p>Apartment in <br> Banglore Urban </p><p>$6500 for two nights</p></div>
+       <div class="picture"><p>Guest Favourite</p><i class="fa-solid fa-heart"></i><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/14db473c-8429-4f59-9bf2-f1fc10a615a0.jpg?im_w=480" alt=""><p>Apartment in <br> Banglore Urban </p><p>$6500 for two nights</p></div>
+       <div class="picture"><p>Guest Favourite</p><i class="fa-solid fa-heart"></i><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/hosting/Hosting-1455177541869460361/original/022deec4-9834-4d1c-88ea-fb7a895e699b.jpeg?im_w=480" alt=""><p>Apartment in <br> Banglore Urban </p><p>$6500 for two nights</p></div>
+       <div class="picture"><p>Guest Favourite</p><i class="fa-solid fa-heart"></i><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTQyOTUyODcxMjMwNTM0NjU2OQ==/original/e3ca98ba-1e65-413b-9758-6229c33232e3.jpeg?im_w=480" alt=""><p>Apartment in <br> Banglore Urban </p><p>$6500 for two nights</p></div>
+       <div class="picture"><p>Guest Favourite</p><i class="fa-solid fa-heart"></i><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/hosting/Hosting-32191897/original/89989941-7675-4d03-8e5a-690bb363a759.jpeg?im_w=480" alt=""><p>Apartment in <br> Banglore Urban </p><p>$6500 for two nights</p></div>
+       <div class="picture"><p>Guest Favourite</p><i class="fa-solid fa-heart"></i><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/9c4926a0-71e4-4bac-9f40-f96a65420546.jpg?im_w=480" alt=""><p>Apartment in <br> Banglore Urban </p><p>$6500 for two nights</p></div>
+       </section>
+      <h1 id="head2">Popular home in Goa<i class="fa-solid fa-greater-than"></i></h1>
+      <section id="sec3">
+       <div class="picture"><p>Guest Favourite</p><i class="fa-solid fa-heart"></i><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/hosting/Hosting-1245681640386906473/original/b00cca4b-e829-42e3-aaef-593c69995ba3.jpeg?im_w=480" alt=""><p>Apartment in <br> Banglore Urban </p><p>$6500 for two nights</p></div>
+       <div class="picture"><p>Guest Favourite</p><i class="fa-solid fa-heart"></i><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/hosting/Hosting-1374894139499865418/original/f44af654-fbe8-465e-a58f-7aa681fe50e1.jpeg?im_w=480" alt=""><p>Apartment in <br> Banglore Urban </p><p>$6500 for two nights</p></div>
+       <div class="picture"><p>Guest Favourite</p><i class="fa-solid fa-heart"></i><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/14db473c-8429-4f59-9bf2-f1fc10a615a0.jpg?im_w=480" alt=""><p>Apartment in <br> Banglore Urban </p><p>$6500 for two nights</p></div>
+       <div class="picture"><p>Guest Favourite</p><i class="fa-solid fa-heart"></i><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/hosting/Hosting-1455177541869460361/original/022deec4-9834-4d1c-88ea-fb7a895e699b.jpeg?im_w=480" alt=""><p>Apartment in <br> Banglore Urban </p><p>$6500 for two nights</p></div>
+       <div class="picture"><p>Guest Favourite</p><i class="fa-solid fa-heart"></i><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTQyOTUyODcxMjMwNTM0NjU2OQ==/original/e3ca98ba-1e65-413b-9758-6229c33232e3.jpeg?im_w=480" alt=""><p>Apartment in <br> Banglore Urban </p><p>$6500 for two nights</p></div>
+       <div class="picture"><p>Guest Favourite</p><i class="fa-solid fa-heart"></i><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/hosting/Hosting-32191897/original/89989941-7675-4d03-8e5a-690bb363a759.jpeg?im_w=480" alt=""><p>Apartment in <br> Banglore Urban </p><p>$6500 for two nights</p></div>
+       <div class="picture"><p>Guest Favourite</p><i class="fa-solid fa-heart"></i><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/9c4926a0-71e4-4bac-9f40-f96a65420546.jpg?im_w=480" alt=""><p>Apartment in <br> Banglore Urban </p><p>$6500 for two nights</p></div>
+       </section>
+        <h1 id="head3">Popular home in Bengaluru<i class="fa-solid fa-greater-than"></i></h1>
+        <section id="sec4">
+       <div class="picture"><p>Guest Favourite</p><i class="fa-solid fa-heart"></i><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/hosting/Hosting-1245681640386906473/original/b00cca4b-e829-42e3-aaef-593c69995ba3.jpeg?im_w=480" alt=""><p>Apartment in <br> Banglore Urban </p><p>$6500 for two nights</p></div>
+       <div class="picture"><p>Guest Favourite</p><i class="fa-solid fa-heart"></i><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/hosting/Hosting-1374894139499865418/original/f44af654-fbe8-465e-a58f-7aa681fe50e1.jpeg?im_w=480" alt=""><p>Apartment in <br> Banglore Urban </p><p>$6500 for two nights</p></div>
+       <div class="picture"><p>Guest Favourite</p><i class="fa-solid fa-heart"></i><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/14db473c-8429-4f59-9bf2-f1fc10a615a0.jpg?im_w=480" alt=""><p>Apartment in <br> Banglore Urban </p><p>$6500 for two nights</p></div>
+       <div class="picture"><p>Guest Favourite</p><i class="fa-solid fa-heart"></i><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/hosting/Hosting-1455177541869460361/original/022deec4-9834-4d1c-88ea-fb7a895e699b.jpeg?im_w=480" alt=""><p>Apartment in <br> Banglore Urban </p><p>$6500 for two nights</p></div>
+       <div class="picture"><p>Guest Favourite</p><i class="fa-solid fa-heart"></i><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTQyOTUyODcxMjMwNTM0NjU2OQ==/original/e3ca98ba-1e65-413b-9758-6229c33232e3.jpeg?im_w=480" alt=""><p>Apartment in <br> Banglore Urban </p><p>$6500 for two nights</p></div>
+       <div class="picture"><p>Guest Favourite</p><i class="fa-solid fa-heart"></i><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/hosting/Hosting-32191897/original/89989941-7675-4d03-8e5a-690bb363a759.jpeg?im_w=480" alt=""><p>Apartment in <br> Banglore Urban </p><p>$6500 for two nights</p></div>
+       <div class="picture"><p>Guest Favourite</p><i class="fa-solid fa-heart"></i><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/9c4926a0-71e4-4bac-9f40-f96a65420546.jpg?im_w=480" alt=""><p>Apartment in <br> Banglore Urban </p><p>$6500 for two nights</p></div>
+       </section>
+    
+
+       <!-- <div class="picture8"><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/miso/Hosting-1378778715717335892/original/2a2a3c0f-7ece-4210-b826-6dfd08d65323.jpeg?im_w=480" alt=""></div> -->
+        <!-- <p id="para2">Popular homes in Bengaluru <i class="fa-solid fa-greater-than"></i></p>
+       <div id="picture9"><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTM0OTE5NDg5MzY3ODM4OTMzOQ%3D%3D/original/01b09d3c-749b-4e4a-acf5-c93f32faf9e7.jpeg?im_w=480" alt=""></div>
+       <div id="picture10"><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTAwMjU1NjY2MjEwNTA4MzMzNQ%3D%3D/original/569ae022-2cb3-42c0-8afe-16e94cbf3a44.jpeg?im_w=480" alt=""></div>
+       <div id="picture11"><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/hosting/Hosting-1439008411725491361/original/e204bfa2-bbc1-4cb7-a59c-3d757ad65989.jpeg?im_w=480" alt=""></div>
+       <div id="picture12"><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/hosting/Hosting-1439008411725491361/original/e204bfa2-bbc1-4cb7-a59c-3d757ad65989.jpeg?im_w=480" alt=""></div>
+       <div id="picture13"><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTM1NTQ3MDYxNjkxMDM1MTUxNA==/original/d623e244-d95c-41d8-86f3-0e49af44959d.jpeg?im_w=480" alt=""></div>
+       <div id="picture14"><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/miso/Hosting-1120083996339527865/original/297a516f-aef1-4200-82d6-281d004419ef.jpeg?im_w=480" alt=""></div>
+       
+       <div id="picture15"><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/miso/Hosting-670162692458986051/original/cd056e76-b001-403d-b930-aa0889187696.jpeg?im_w=480" alt=""></div>
+       <div id="picture16"><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/miso/Hosting-649849611998556786/original/42048444-94ee-421a-a903-a1fed2f1eff5.jpeg?im_w=480" alt=""></div>
+       <div id="picture17"><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTQ0MzIzODcwODEzNDE5NDk3OA==/original/a2472c73-e967-4c2a-b863-1532f11a35f2.jpeg?im_w=480" alt=""></div>
+       <div id="picture18"><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/airflow/Hosting-1001220205419224814/original/64d9873c-e7d8-49db-a36d-cff918fb0e0d.jpg?im_w=480" alt=""></div>
+       <div id="picture19"><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTMwNjQ0NDM4MjgxNTk2MzkxMA==/original/e0192f38-870c-4396-91bd-5416e2452bf3.jpeg?im_w=480" alt=""></div>
+       <div id="picture20"><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/hosting/Hosting-1294912515224709010/original/98701b04-8985-4fda-b858-88b20c73c519.jpeg?im_w=480" alt=""></div>
+       <div id="picture21"><img height="180" width="200px" src="https://a0.muscache.com/im/pictures/miso/Hosting-1315591407598524787/original/6b4b8983-c18c-4b47-9a4f-1a012ad87fa4.jpeg?im_w=480" alt=""></div> -->
+   </section>
+   <section id="footer">
+    <p>Inspiration for future getaways</p>
+    <p>Unique stays</p>
+    <br><br>
+    <hr>
+    <br><br><br>
+   <div class="paragraph" >
+    <p>Cabins <br> United states</p>
+    <p>Treehouses <br> United states</p>
+    <p>Tiny Houses</p>
+    <p>Beachhouses <br> United states</p>
+    <p>Beachhouses <br> United states</p>
+    <p>Beachhouses <br> United states</p>
+   </div>
+    <div class="paragraph" id="demo">
+    <p>Cabins <br> United states</p>
+    <p>Treehouses <br> United states</p>
+    <p>Tiny Houses</p>
+    <p>Beachhouses <br> United states</p>
+    <p>Beachhouses <br> United states</p>
+    <p>Beachhouses <br> United states</p>
+   </div>
+    <div class="paragraph" id="demo2">
+    <p>Cabins <br> United states</p>
+    <p>Treehouses <br> United states</p>
+    <p>Tiny Houses</p>
+    <p>Beachhouses <br> United states</p>
+    <p>Beachhouses <br> United states</p>
+    <p>Beachhouses <br> United states</p>
+   </div>
+    <div class="paragraph" id="demo3">
+    <p>Cabins <br> United states</p>
+    <p>Treehouses <br> United states</p>
+    <p>Tiny Houses</p>
+    <p>Beachhouses <br> United states</p>
+    <p>Beachhouses <br> United states</p>
+    <p>Beachhouses <br> United states</p>
+   </div>
+    <div class="paragraph" id="demo4">
+    <p>Cabins <br> United states</p>
+    <p>Treehouses <br> United states</p>
+    <p>Tiny Houses</p>
+    <p>Beachhouses <br> United states</p>
+    <p>Beachhouses <br> United states</p>
+    <p>Beachhouses <br> United states</p>
+   </div>
+   <div id="footer2">
+        <div id="line1">
+                <a href="" class="anchorhead">Support</a>
+                <a href="" class="anchor">Help Center</a>
+                <a href="" class="anchor">Air Cover</a>
+                <a href="" class="anchor">Anti-Discrimination</a>
+                <a href="" class="anchor">Disability Support</a>
+                <a href="" class="anchor">Cancellation Option</a>
+                <a href="" class="anchor">Report neightbourhood concern</a>
+            </div>
+            <div id="line2">
+                <a href="" class="anchorhead">Hosting</a>
+                <a href="" class="anchor">Help Center</a>
+                <a href="" class="anchor">Air Cover</a>
+                <a href="" class="anchor">Anti-Discrimination</a>
+                <a href="" class="anchor">Disability Support</a>
+                <a href="" class="anchor">Cancellation Option</a>
+                <a href="" class="anchor">Report neightbourhood concern</a>
+            </div>
+            <div id="line3">
+                <a href="" class="anchorhead">Airbnb</a>
+                <a href="" class="anchor">Help Center</a>
+                <a href="" class="anchor">Air Cover</a>
+                <a href="" class="anchor">Anti-Discrimination</a>
+                <a href="" class="anchor">Disability Support</a>
+                <a href="" class="anchor">Cancellation Option</a>
+                <a href="" class="anchor">Report neightbourhood concern</a>
+            </div>
+            <div id="line4">
+                <span id="span">
+                    <p>© 2025 Airbnb, Inc.</p>
+                    <ul id="list">
+                        <li>Privacy</li>
+                        <li>Terms</li>
+                        <li>Sitemap</li>
+                        <li>Company Details</li>
+                    </ul>
+                </span>
+                <div id="line5">
+                    <img height="15" width="15"
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgYXJpYS1oaWRkZW49InRydWUiIHJvbGU9InByZXNlbnRhdGlvbiIgZm9jdXNhYmxlPSJmYWxzZSIgc3R5bGU9ImRpc3BsYXk6IGJsb2NrOyBoZWlnaHQ6IDE2cHg7IHdpZHRoOiAxNnB4OyBmaWxsOiBjdXJyZW50Y29sb3I7Ij48cGF0aCBkPSJNOCAuMjVhNy43NyA3Ljc3IDAgMCAxIDcuNzUgNy43OCA3Ljc1IDcuNzUgMCAwIDEtNy41MiA3LjcyaC0uMjVBNy43NSA3Ljc1IDAgMCAxIC4yNSA4LjI0di0uMjVBNy43NSA3Ljc1IDAgMCAxIDggLjI1em0xLjk1IDguNWgtMy45Yy4xNSAyLjkgMS4xNyA1LjM0IDEuODggNS41SDhjLjY4IDAgMS43Mi0yLjM3IDEuOTMtNS4yM3ptNC4yNiAwaC0yLjc2Yy0uMDkgMS45Ni0uNTMgMy43OC0xLjE4IDUuMDhBNi4yNiA2LjI2IDAgMCAwIDE0LjE3IDl6bS05LjY3IDBIMS44YTYuMjYgNi4yNiAwIDAgMCAzLjk0IDUuMDggMTIuNTkgMTIuNTkgMCAwIDEtMS4xNi00LjdsLS4wMy0uMzh6bTEuMi02LjU4LS4xMi4wNWE2LjI2IDYuMjYgMCAwIDAtMy44MyA1LjAzaDIuNzVjLjA5LTEuODMuNDgtMy41NCAxLjA2LTQuODF6bTIuMjUtLjQyYy0uNyAwLTEuNzggMi41MS0xLjk0IDUuNWgzLjljLS4xNS0yLjktMS4xOC01LjM0LTEuODktNS41aC0uMDd6bTIuMjguNDMuMDMuMDVhMTIuOTUgMTIuOTUgMCAwIDEgMS4xNSA1LjAyaDIuNzVhNi4yOCA2LjI4IDAgMCAwLTMuOTMtNS4wN3oiPjwvcGF0aD48L3N2Zz4="
+                        alt="">
+                    <p class="english">English(IN)</p>
+                    <p class="english">English (IN) ₹ INR</p>
+                    <img height="15" width="15"
+                        src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgYXJpYS1oaWRkZW49InRydWUiIHJvbGU9InByZXNlbnRhdGlvbiIgZm9jdXNhYmxlPSJmYWxzZSIgc3R5bGU9ImRpc3BsYXk6IGJsb2NrOyBoZWlnaHQ6IDE2cHg7IHdpZHRoOiAxNnB4OyBmaWxsOiBjdXJyZW50Y29sb3I7Ij48cGF0aCBkPSJtMTUuOTcwMDU5OSAxYy04LjI2NzY2NDY5IDAtMTQuOTcwMDU5OSA2LjcwMjM5NTIxLTE0Ljk3MDA1OTkgMTQuOTcwMDU5OSAwIDcuMDIwMzU5MyA0LjgzMzUzMjkzIDEyLjkxMTM3NzIgMTEuMzUzODkyMiAxNC41MjkzNDEzdi05Ljk1NDQ5MWgtMy4wODY4MjYzM3YtNC41NzQ4NTAzaDMuMDg2ODI2MzN2LTEuOTcxMjU3NWMwLTUuMDk1MjA5NTkgMi4zMDU5ODgtNy40NTY4ODYyMyA3LjMwODM4MzItNy40NTY4ODYyMy45NDg1MDMgMCAyLjU4NTAzLjE4NjIyNzU0IDMuMjU0NDkxMS4zNzE4NTYyOXY0LjE0NjcwNjU0Yy0uMzUzMjkzNC0uMDM3MTI1Ny0uOTY3MDY1OS0uMDU1Njg4Ni0xLjcyOTM0MTQtLjA1NTY4ODYtMi40NTQ0OTEgMC0zLjQwMjk5NC45Mjk5NDAxLTMuNDAyOTk0IDMuMzQ3MzA1NHYxLjYxNzk2NDFoNC44ODk4MjA0bC0uODQwMTE5OCA0LjU3NDg1MDNoLTQuMDQ5NzAwNnYxMC4yODU2Mjg3YzcuNDEyNTc0OS0uODk1MjA5NiAxMy4xNTYyODc1LTcuMjA2NTg2OCAxMy4xNTYyODc1LTE0Ljg2MDQ3OS0uMDAwNTk4OC04LjI2NzY2NDY5LTYuNzAyOTk0LTE0Ljk3MDA1OTktMTQuOTcwNjU4Ny0xNC45NzAwNTk5eiI+PC9wYXRoPjwvc3ZnPg=="
+                        alt="">
+                    <img height="15" width="15"
+                        src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgYXJpYS1oaWRkZW49InRydWUiIHJvbGU9InByZXNlbnRhdGlvbiIgZm9jdXNhYmxlPSJmYWxzZSIgc3R5bGU9ImRpc3BsYXk6IGJsb2NrOyBoZWlnaHQ6IDE2cHg7IHdpZHRoOiAxNnB4OyBmaWxsOiBjdXJyZW50Y29sb3I7Ij48cGF0aCBkPSJtMTguNDYxMTk4IDEzLjY5NjQzMDMgMTAuOTIyNDIwNi0xMi42OTY0MzAzaC0yLjU4ODI2NDFsLTkuNDgzOTM2NCAxMS4wMjQxMzItNy41NzQ3OTIxOC0xMS4wMjQxMzJoLTguNzM2NjI1OTJsMTEuNDU0NTcyMSAxNi42NzA0NDAxLTExLjQ1NDU3MjEgMTMuMzE0MTU2NWgyLjU4ODQxMDc2bDEwLjAxNTI4MTE0LTExLjY0MTg1ODIgNy45OTk1MzU1IDExLjY0MTg1ODJoOC43MzY2MjU5bC0xMS44NzkyOTEtMTcuMjg4MTY2M3ptLTMuNTQ1MTgzMyA0LjEyMDg4MDItMS4xNjA1ODY4LTEuNjYtOS4yMzQzNzY1Ni0xMy4yMDg3OTIxNmgzLjk3NTY0NzkzbDcuNDUyMjQ5NDMgMTAuNjU5OTE2ODYgMS4xNjA1ODY4IDEuNjYgOS42ODcwNDE1IDEzLjg1NjI1OTJoLTMuOTc1NjQ3OWwtNy45MDQ5MTQ0LTExLjMwNjc0ODJ6Ij48L3BhdGg+PC9zdmc+"
+                        alt="">
+                    <img height="15" width="15"
+                        src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgYXJpYS1oaWRkZW49InRydWUiIHJvbGU9InByZXNlbnRhdGlvbiIgZm9jdXNhYmxlPSJmYWxzZSIgc3R5bGU9ImRpc3BsYXk6IGJsb2NrOyBoZWlnaHQ6IDE2cHg7IHdpZHRoOiAxNnB4OyBmaWxsOiBjdXJyZW50Y29sb3I7Ij48cGF0aCBkPSJtOS43ODc2MjQzMiAxLjEwNDkwNjQyYy0xLjU5Ni4wNzUzLTIuNjg1OS4zMy0zLjYzODcuNzA0NC0uOTg2MS4zODQzLTEuODIxOS45LTIuNjUzNSAxLjczNDZzLTEuMzQzNyAxLjY3MS0xLjcyNTMgMi42NTg2Yy0uMzY5My45NTQ5LS42MTk1IDIuMDQ1Ny0uNjkgMy42NDI2LS4wNzA1IDEuNTk2ODk5OTgtLjA4NjEgMi4xMTAxOTk5OC0uMDc4MyA2LjE4MzU5OTk4cy4wMjU4IDQuNTg0LjEwMzIgNi4xODQyYy4wNzYyIDEuNTk1Ny4zMyAyLjY4NTMuNzA0NCAzLjYzODQuMzg0OS45ODYxLjkgMS44MjE2IDEuNzM0OSAyLjY1MzVzMS42NzA3IDEuMzQyOCAyLjY2MDcgMS43MjVjLjk1NC4zNjg3IDIuMDQ1MS42MjAxIDMuNjQxNy42OSAxLjU5NjU5OTk4LjA2OTkgMi4xMTA0OTk5OC4wODYxIDYuMTgyNjk5OTguMDc4M3M0LjU4NDktLjAyNTggNi4xODQ4LS4xMDE3IDIuNjgzOC0uMzMxNSAzLjYzNzItLjcwNDFjLjk4NjEtLjM4NTggMS44MjIyLS45IDIuNjUzNS0xLjczNTJzMS4zNDMxLTEuNjcyMiAxLjcyNDQtMi42NjA0Yy4zNjk2LS45NTQuNjIwNy0yLjA0NTEuNjktMy42NDA1LjA2OTktMS42MDExLjA4NjQtMi4xMTIzLjA3ODYtNi4xODUxcy0uMDI2MS00LjU4MzQtLjEwMi02LjE4Mjk5OTk4Yy0uMDc1OS0xLjU5OTYtLjMzLTIuNjg1OS0uNzA0MS0zLjYzOTYtLjM4NTUtLjk4NjEtLjktMS44MjEtMS43MzQ2LTIuNjUzNXMtMS42NzIyLTEuMzQ0LTIuNjYwMS0xLjcyNDRjLS45NTQ2LS4zNjkzLTIuMDQ1MS0uNjIxLTMuNjQxNy0uNjlzLTIuMTEwNS0uMDg2Ny02LjE4NDItLjA3ODktNC41ODM3LjAyNTItNi4xODM1OTk5OC4xMDMybS4xNzUyIDI3LjExNjM5OTk4Yy0xLjQ2MjUtLjA2MzYtMi4yNTY2LS4zMDY2LTIuNzg1OC0uNTEtLjcwMDgtLjI3LTEuMi0uNTk2NC0xLjcyNzQtMS4xMTg3cy0uODUxNC0xLjAyMzMtMS4xMjUtMS43MjI2Yy0uMjA1NS0uNTI5Mi0uNDUzLTEuMzIyNC0uNTIxNC0yLjc4NDktLjA3NDQtMS41ODA3LS4wOS0yLjA1NTMtLjA5ODctNi4wNnMuMDA2Ni00LjQ3ODcuMDc1OS02LjA1OTk5OTk4Yy4wNjI0LTEuNDYxMy4zMDY5LTIuMjU2My41MS0yLjc4NTIuMjctLjcwMTcuNTk1Mi0xLjIgMS4xMTg3LTEuNzI3MXMxLjAyMy0uODUxNyAxLjcyMjktMS4xMjUzYy41Mjg2LS4yMDY0IDEuMzIxOC0uNDUxOCAyLjc4MzctLjUyMTQgMS41ODE4OTk5OC0uMDc1IDIuMDU1ODk5OTgtLjA5IDYuMDU5OTk5OTgtLjA5ODdzNC40NzkzLjAwNjMgNi4wNjE4LjA3NTljMS40NjEzLjA2MzYgMi4yNTY2LjMwNTcgMi43ODQ5LjUxLjcwMTEuMjcgMS4yLjU5NDMgMS43MjcxIDEuMTE4N3MuODUyIDEuMDIyMSAxLjEyNTYgMS43MjM1Yy4yMDY3LjUyNzEuNDUyMSAxLjMyLjUyMTEgMi43ODI4LjA3NTMgMS41ODE4OTk5OC4wOTI0IDIuMDU2MTk5OTguMDk5NiA2LjA1OTk5OTk4cy0uMDA2OSA0LjQ3OTMtLjA3NjIgNi4wNmMtLjA2MzkgMS40NjI1LS4zMDYzIDIuMjU2OS0uNTEgMi43ODY3LS4yNy43MDA1LS41OTU1IDEuMi0xLjExOTMgMS43MjY4cy0xLjAyMjcuODUxNC0xLjcyMjkgMS4xMjVjLS41MjguMjA2MS0xLjMyMjEuNDUyMS0yLjc4MjguNTIxNy0xLjU4MTkuMDc0NC0yLjA1NTkuMDktNi4wNjE1LjA5ODdzLTQuNDc4MS0uMDA3NS02LjA1OTk5OTk4LS4wNzU5bTEyLjIyNzk5NzQ4LTIwLjIzODI5OTk4Yy4wMDEyMTc1LjcyODA4NTA3LjQ0MDkzMjMgMS4zODM3MzUxNCAxLjExNDA4MyAxLjY2MTE4MzI2czEuNDQ3MTUxMi4xMjIwNDcxMyAxLjk2MTA0MDktLjM5MzczMDYzLjY2NjQ1MTItMS4yOTAzNDI5LjM4NjUzNjMtMS45NjI0NzE2MmMtLjI3OTkxNDgtLjY3MjEyODcyLS45MzcxNzMtMS4xMDk0MzYxNy0xLjY2NTI1NzctMS4xMDc5ODQ2My0uOTkzODc4Ni4wMDE5OS0xLjc5ODA1ODQuODA5MTI0MzgtMS43OTY0MDI1IDEuODAzMDAzNjJtLTEzLjg5MzAxMTc1IDguMDMxODk5OThjLjAwODQxNDI3IDQuMjU0IDMuNDYzMjE0MjUgNy42OTQ3IDcuNzE2MzE0MjUgNy42ODY2MTQzIDQuMjUzMS0uMDA4MTE0MyA3LjY5NjItMy40NjI2MTQzIDcuNjg4MTE0My03LjcxNjYxNDMtLjAwODExNDMtNC4yNTQtMy40NjM4MTQzLTcuNjk1NTk5OTgtNy43MTc1MTQzLTcuNjg3MjE1MzMtNC4yNTM3LjAwODQxNTM1LTcuNjk0OTk5OTggMy40NjM4MTUzMy03LjY4NjkxNDI1IDcuNzE3MjE1MzNtMi43MDE4MDQyNS0uMDA1NGMtLjAwNTQ1MjItMi43NjE0NzEgMi4yMjg3MzI1LTUuMDA0NTE0NiA0Ljk5MDIwMzUtNS4wMDk5OTA0IDIuNzYxNDcxLS4wMDU0NTU4IDUuMDA0NTE3NSAyLjIyODcyNiA1LjAwOTk5NyA0Ljk5MDE5Ny4wMDU0NTkzIDIuNzYxNDcxLTIuMjI4NzE5NSA1LjAwNDUyMDQtNC45OTAxOTA1IDUuMDEwMDA0NS0xLjMyNjE1ODIuMDAyNzc2NC0yLjU5OTA5MDEtLjUyMTQ0ODEtMy41Mzg2ODI1LTEuNDU3MzI3MXMtMS40Njg4NTM1LTIuMjA2NzI1MS0xLjQ3MTMyNzUtMy41MzI4ODQiPjwvcGF0aD48L3N2Zz4="
+                        alt="">
+                </div>
+            </div>
+   </section>
+
+</body>
+</html>

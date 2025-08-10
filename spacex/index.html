@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        header{
+            display:flex;
+            justify-content: space-around;
+            /* opacity:0.5; */
+            padding:20px;
+            background-color: black;
+        }
+        nav{
+            /* border:2px solid red; */
+            width:1000px;
+            display:flex;
+            justify-content: space-around;
+        }
+        nav>a{
+            text-decoration: none;
+            font-size: 18px;
+            color:white;
+        }
+        select{
+            width: 260px;
+            height: 25px;
+            margin-left: -30px;
+            background-color: black ;
+            color:rgba(255, 255, 255, 0.61);
+            font-size: 14px;
+        }
+        video{
+            overflow-y: hidden ;
+            
+        }
+        header>img{
+            border:1px solid white;
+        }
+        #sec1{
+           width: 100%;
+            height: 900px;
+            /* border: 2px solid red; */
+            position:relative;
+        }
+        #sec2{
+              position:relative;
+        }
+        #sec3{
+            position:relative;
+        }
+        #sect{
+            position:relative;
+        }
+        #sec4{
+            position:relative;
+        }
+        #sec1>h1,#sec2>#box>h1,#sec3>#box1>h1,#sect>#bo>h1,#sec4>#box4>h1{
+            text-transform: uppercase;
+            font-size: 60px;
+            color:white;
+            position:absolute;
+            bottom:500px;
+            left:200px;
+            font-family: arial,sans-serif;
+        }
+        #sec1>p,#sec2>#box>p,#sec3>#box1>p,#sect>#bo>P,#sec4>#box4>p{
+            font-size: 16px;
+            color:white;
+            position:absolute;
+            bottom:420px;
+            left:200px;
+            font-family: arial,sans-serif;
+        }
+        #sec1>button,#sec2>#box>button,#sec3>#box1>button,#sect>#bo>button,#sec4>#box4>button{
+            background-color: rgba(0, 0, 0, 0.604);
+            font-size: 20px;
+            width: 150px;
+             border:0.5px solid white;
+            border-radius: 5px;
+            padding:5px;
+            color:white;
+            position:absolute;
+            bottom:350px;
+            left:200px;
+            font-family: arial,sans-serif;
+            text-align: left;
+        }
+        #sec2>#box{
+            margin-left: -500px;
+        }
+        #sec3>#box1>button{
+            width: 280px;
+             font-size: 18px;
+        }
+        #sect>#bo>button{
+             width: 260px;
+             font-size: 14px;
+        }
+        #sec4>#box4>button{
+             width: 260px;
+             font-size: 14px;
+        }
+        #sec4>#footer{
+            background-color: rgba(0, 0, 0, 0.319);
+          position: absolute;
+          bottom: 3px;
+          display: flex;
+          gap: 400px;
+          width:100%;
+          padding:10px;
+        }
+         #sec4>#footer>#div{
+            display:flex;
+             gap:30px;
+         }
+        #sec4>#footer>#div>a{
+            text-decoration: none;
+            color:white;
+        }
+         #sec4>#footer>div{
+            position:relative;
+            left:150px;
+            text-decoration: none;
+            color:white;
+         }
+           #sec4>#footer>div>img{
+            position:relative;
+            left:0px;
+           border-radius: 50%;
+         }
+    </style>
+</head>
+<body>
+         <header>
+        <img height="40px" width="180px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAZlBMVEUAAAD////BwcHR0dFwcHAeHh5paWlGRkZjY2NfX1/W1tbt7e2qqqp2dnb6+vo2NjYICAiwsLAxMTEYGBhBQUHc3NxMTEy3t7cmJiaBgYFSUlJZWVnKysoTExP09PSJiYmUlJShoaHtJupnAAABvklEQVR4nO3U6W6rMBAFYA8QQzBm3wIEwvu/ZMc2NHRR1QpVvVc635/E9tgcYIQQAAAAAAAAAAAAAAAAAAAAAAAAAPBDfVn2l+qvUxxU+nGLhjCr7n+dxMlHXUxekP8jcYw6aZpC/l6g/MdF7UPN03Dqoom3CXiQFfuoaN1y2e2F125b6iIeyWmvnCR3M+9bt0heSmt7KpKYSPmbUYhwpsYNiEKzfPcpcYVjui/5fiaEjvdBbO6m4g2Kw0qf5vVcIubT7TAKFel9frG/HdHV/pGUjl+ckz+IutIj8sLTmURM/ppYOreh1kgaag/b0JxtoaLDvoVSYvNzZtCcq/kq+Ldd7dnWYkPt1MUVtIqmT0PNN6118JwJ+Q128mQ3vbNS557UeGWROXyIG8Y5189Cqf7Nfn5M6bIQPc5HyfuLIxIqbKhni+VLYSS+jcOh5N3V9ncbqq7c0H6OuPcoEnLmpjr9ecq91/dlWrydt/4+qhpKM5HFzzfb2wdzeO1mUdWmmM9T+myqKgo2Azf6RersY00dmNlSboXSXL3W+74gc6Pa3aUMtPzWBxcAAAAAAAAAAAAAAAAAAAAAAADgP/MCEcUUWA2LdSUAAAAASUVORK5CYII=" alt="">
+        <nav><a href="">Vehicles</a>
+            <a href="">Launches</a>
+            <a href="">Human Spaceflight</a>
+            <a href="">Rideshare</a>
+            <a href="">Starlink</a>
+            <a href="">Starshield</a>
+            <a href="">Company</a>
+            <a href="">Shop</a>
+        </nav>
+      <select>
+        <option value="">Upcoming Languages</option>
+      </select>
+    </header>
+     <section id="sec1"> <video src="https://sxcontent9668.azureedge.us/cms-assets/assets/Mars_Rotation_Web_HB_d96299f9de.mp4" autoplay loop muted></video>
+        <h1>Making life <br> multiplanetary</h1>
+        <p>SpaceX was founded under the belief that a future where humanity is out exploring the stars is <br> fundamentally more exciting than one where we are not.</p>
+        <button>
+            Explore
+            <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+</section>
+<section id="sec2">
+    <img height="1000px" width="1600px" src="https://sxcontent9668.azureedge.us/cms-assets/assets/Revolutionizing_Space_Tech_Desktop_ec67ad03c2.jpg" alt="">
+    <div id="box">
+          <h1>Revolutionizing <br>space technology</h1>
+        <p>paceX’s Starship spacecraft and Super Heavy rocket is a fully reusable transportation system <br> designed to carry both crew and cargo to Earth orbit, the Moon, Mars, and beyond.</p>
+        <button>
+            Learn More
+            <i class="fa-solid fa-arrow-right-long"></i>
+        </button> 
+    </div>
+</section>
+<section id="sec3">
+    <video src="https://sxcontent9668.azureedge.us/cms-assets/assets/Space_X_Falcon_Heavy_UAS_Landing_DESKTOP_compress_b4568daf9c_5e2026727a.mp4" autoplay muted loop></video>
+    <div id="box1">
+          <h1>World’s leading launch <br> service provider</h1>
+        <p>SpaceX leads the world in launches with its reliable, reusable rockets and is developing the fully <br> and rapidly reusable rockets necessary to transform humanity’s ability to access space into <br> something as routine as air travel.</p>
+        <button>
+           RESERVE YOUR RIDE
+            <i class="fa-solid fa-arrow-right-long"></i>
+        </button> 
+    </div>
+</section>
+<section id="sect">
+    <img height="1000px" width="1600px" src="https://sxcontent9668.azureedge.us/cms-assets/assets/Advancing_Human_Spaceflight_Desktop_61c8ba1c67.jpg" alt="">
+    <div id="bo">
+          <h1>Advancing human  <br> spaceflight</h1>
+        <p>Since returning human spaceflight capabilities to the United States in 2020, SpaceX is helping <br> build a new era where not just hundreds of people, but thousands and ultimately millions will be <br> able to explore space.</p>
+        <button>
+            JOIN A MISSION
+            <i class="fa-solid fa-arrow-right-long"></i>
+        </button> 
+    </div>
+</section>
+<section id="sec4">
+    <video src="https://sxcontent9668.azureedge.us/cms-assets/assets/Starlink_12_10_20250428_Deploy_website_DESKTOP_14fe7e072c.mp4" autoplay muted loop></video>
+    <div id="box4">
+          <h1>Delivering high-speed <br> internet from space</h1>
+        <p>Starlink is the world’s most advanced satellite constellation using low-Earth orbit to deliver <br> broadband internet capable of supporting streaming, online gaming, video calls, and more.</p>
+        <button>
+           ORDER NOW
+            <i class="fa-solid fa-arrow-right-long"></i>
+        </button> 
+    </div>
+    <div id="footer">
+       <div> <img id="i1" height="60px" width="60px" src="data:image/webp;base64,UklGRnYDAABXRUJQVlA4IGoDAACQHgCdASrzAPMAPp1Oo02lpCMiIRQIWLATiWlu4XShG9wB+4cqegDxROpDyJ/4PegOI/1LiJ/3NY7Mr8Y/0h7A/629YT9wPZJ/ZkHdeL00up5l4vTS6nmXi9NLqeZeL00up5l4vTS6nmXi9NLqeZeL00unWmqZEFl3hL5vGZlhs8mFKCs5etkX//XP9ykTYazIwhWZeLb614FJVCwelGBeCK8athcxJMU28aLCWDMy9p2W+/QtflHgD4/5VYQjtpJYjK24DzCFQiEy9qXU8y8XppdTzLxeml1PMvF6aXU8y8XppdTzLxeml1PMvF6aXU8y8XppdTzLxeml1PCAAP7/W8gAAAyT6iNRonCdb6P7KZS2r5x/LGNNFO25/E22ECm9/2w5Wdr1hZOt9qCHpNBXE/vyfTGzqLuLM+QDOnC5sCWh4OmFIQ/AzPgdpkEwe7P31wdx+zmrMWA9f7kMhgITrMgJ5QJEw1rnhlyohPc4e/Xf26Zzglc/UFEqGpCkthbh+fClHHoj6bfs/0mbjWj0VS3RbQ/NjXLaUWTfEKk9EQjYgfOWQNqvMQ3lzjTYm4v1O/I/Wmf8I+1PDNbg0nNlo3At6JwbcWmKcRh04h8cH4OuPuORM8NXn++LZXHef3m/Vf3uR6WOgBKyxt9bdlITzqRClPxEgmNzXZOzZVFtsxiHwVj6AXxciMhOf1cZ3CCKuKQ3EbDkLmqnZoV6qnfV8c/xovnOukiNsL/zLbSlea6w8r5m4l2nuN78mYFrCIp3vcWaqoJK49tQv8488dcXCFSO9PfbyTynQu5DBgz9LQAnPNney7+6LoIGA9n7SoyRRFed91ouSluOcfpJJHUjwZFJcBTJwRtT7UVHm3P0sp6T+0ln/65lHqtwxlazzfwz9qJm795cXA6IfP5xso6hejJSmksr37eIhK5qEg0KFtO7qzC1iGutG0ri97LK40OuHdBeV9Imtp9HBG9rTxh1whdTYxyTJFVyvODInamR6Tt5XNakwS8/rzelZR90fChT/4nYDm5ixA2wCylAibDsC90IYMpjOn5wVVrZwEg/KjwMbI9dZv1w+7cs6JG9I7HTXSwK6cNApeV0c0ju2TFgWprcJNvFlcF0qfJ2y1tTiVKFfFNXWT/t6tBH4zZAXBQiDDu+wAAAAAAA" alt=""></div>
+        <div id="div">
+            <a href="">Careers</a>
+            <a href="">Updates</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Suppliers</a>
+        </div>
+       <div> @2025SpaceX</div>
+    </div>
+</section>
+   
+   
+</body>
+</html>

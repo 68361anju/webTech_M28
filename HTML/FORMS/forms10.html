@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cla
+        {
+            size: 300px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table cellspacing="8" border="5" height="300px" width="300px">
+            <tbody>
+                <tr>
+                    <td>
+                        <table cellspacing="3"  height="300px" width="300px">
+                               <tbody>
+                                <tr class="h"                    >
+                        <th colspan="2">Device details</th>
+                    </tr>
+                    <tr>
+                         <td>
+                            <label for="i">*Device ID:</label>
+                         </td>
+                         <td>
+                            <input type="number" name="device" id="i" required>
+                         </td>
+                    </tr>
+                    <td>
+                             <label for="i1">*Device Name:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="devicename" id="i1" required>
+                            </td>
+                     </tr>
+                        <tr>
+                             <td>
+                            <label for="i2">*Device Type:</label>
+                         </td>
+                         <td>
+                            <input type="text" name="devicetype" id="i2" required>
+                         </td>
+                        </tr>
+                          <tr>
+                             <td>
+                              <label for="i3">*Operating Systems:</label>
+                           </td>
+                           <td>
+                            <input type="text" name="OS" id="i3" required>
+                           </td>
+                          </tr>
+                           <tr>
+                            <td>
+                            <label for="i4">*Datacenter:</label>
+                           </td>
+                           <td>
+                             <Select id="i4" name="datacenter">
+                                <option value="none">none</option>
+                            </Select>
+                           </td>
+                           </tr>      
+                               </tbody>
+                        </table>
+
+                    </td>
+                    <td>
+                        <table cellspacing="3" height="300px" width="300px">
+                            <tbody>
+                                  
+                        
+                      <tr><tr><th colspan="2">Configured Assets</th></tr>
+                        <tr>
+                             <td><label for="a">CPU:</label>
+                         </td>
+                         <td class="cla">
+                            <Select id="a" name="Configured Assets">
+                            <option value="none">none</option>
+                            </Select>
+                         </td>
+                        </tr>
+                        <tr>
+                             <td>
+                            <label for="a1">chassis:</label>
+                        </td>
+                        <td>
+                            <Select id="a1" name="chassis">
+                            <option value="none">none</option>
+                            </Select>
+                        </td>
+                        </tr>
+                       <tr>
+                         <td>
+                            <label for="a2">Mothetr Board:</label>
+                        </td>
+                        <td>
+                             <Select id="a2" name="Mothetr Board">
+                            <option value="none">none</option>
+                            </Select>
+                        </td>
+                       </tr>
+                       <tr>
+                          <td>
+                            <label for="a2">Mothetr Board:</label>
+                        </td>
+                        <td>
+                             <Select id="a2" name="Mothetr Board">
+                            <option value="none">none</option>
+                            </Select>
+                        </td>
+                       </tr>
+                          <td>
+                            <label for="a3">RAM:</label>
+                        </td>
+                        <td>
+                            <select name="ram" id="a3">
+                                <option value="none">none</option>
+                            </select>
+                        </td>
+                      </tr>
+                       <tr>
+                         <td>
+                            <label for="a4">Hard-Drives: </label>
+                        </td>
+                        <td>
+                             <Select id="a4" name="Drives">
+                            <option value="none">none</option>
+                            </Select>
+                        </td>
+                       </tr>
+                      <tr>
+                          <td>
+                             <label for="a5">Hard-Drives: </label>
+                        </td>
+                        <td>
+                             <Select id="a5" name="Drives">
+                            <option value="none">none</option>
+                            </Select>
+                        </td>
+                      </tr>
+                    </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <tbody>
+                            <table>
+                            <tbody>
+                                <tr>
+                                    <th>Network Configurations:</th>
+                                </tr>
+                                <tr>
+                                    <td><label for="ip1">IP block #1:</label></td>
+                                    <td> <Select id="ip1" name="block1">
+                            <option value="none">none</option>
+                            </Select></td>
+                                </tr>
+                                  <tr>
+                                    <td><label for="ip2">IP block #2:</label></td>
+                                    <td> <Select id="ip2" name="block2">
+                            <option value="none">none</option>
+                            </Select></td>
+                                </tr>
+                                  <tr>
+                                    <td><label for="ip3">IP block #3:</label></td>
+                                    <td> <Select id="ip3" name="block3">
+                            <option value="none">none</option>
+                            </Select>
+                                </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </tbody>
+                    </td>
+                    <td>
+                        <tbody>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>Assigned Inventory</th>
+                                </tr>
+                                <tr>
+                                    <td><label for="item1">Item1.#</label></td>
+                                         <td> <Select id="item1" name="item1">
+                            <option value="none">none</option>
+                            </Select>
+                                </td>
+                                </tr>
+                                <tr>
+                                          <td><label for="item2">Item2.#</label></td>
+                                         <td> <Select id="item2" name="item2">
+                            <option value="none">none</option>
+                            </Select>
+                                </td>
+                                </tr>
+                                <tr>
+                                        <td><label for="item3">Item3.#</label></td>
+                                         <td><Select id="item3" name="item3">
+                                         <option value="none">none</option>
+                            </Select>
+                                </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </tbody>
+                    </td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

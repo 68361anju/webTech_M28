@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table>thead>tr>th{
+            background-color: blue;
+        }
+        table>thead>tr>th+th{
+            background-color: aqua;
+        }
+         table>thead>tr>th+th+th{
+            background-color: rgb(255, 0, 221);
+        }
+         table>tbody>tr>td{
+            background-color: rgb(0, 255, 8);
+        }
+         table>tbody>tr>td+td{
+            background-color: rgb(187, 0, 255);
+        }
+         table>tbody>tr>td+td+td{
+            background-color: rgb(255, 0, 0);
+        }
+         table>tbody>tr+tr>td{
+            background-color: rgb(0, 221, 255);
+        }
+         table>tbody>tr+tr+tr>td+td{
+            background-color: darkgreen;
+        }
+         table>tbody>tr+tr+tr>td{
+            background-color: darkred;
+        }
+         table>tbody>tr+tr>td+td{
+            background-color: rgb(169, 169, 169);
+        }
+         table>tbody>tr+tr>td{
+            background-color: darkorange;
+        }
+         table>tbody>tr+tr>td+td+td{
+            background-color: darkslategrey;
+        }
+         table>tbody>tr+tr+tr>td+td+td{
+            background-color: darkgoldenrod;
+        }
+        ol>li{
+           background-color: darkgray;
+        }
+        ul>li{
+           background-color: darkgreen; 
+        }
+        ol>li+li{
+           background-color: darkmagenta;
+        }
+        ul>li+li{
+           background-color: darkolivegreen; 
+        }
+        ol>li+li+li{
+           background-color: darkblue;
+        }
+        ul>li+li+li{
+           background-color: darkslateblue; 
+        }
+        ol>li+li+li+li{
+           background-color: darkgoldenrod;
+        }
+        ul>li+li+li+li{
+           background-color: darksalmon; 
+        }
+        ol>li+li+li+li+li{
+           background-color: aqua;
+        }
+        ul>li+li+li+li+li{
+           background-color: black; 
+           color:white;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Combinator selectors</h1>
+    <p>It is used to avoid id & class selectors.</p>
+    <p>It gives the relation blw the 2 selectors.</p>
+    <p>There are differnt types of combinator selectors. They are:</p>
+
+    <ul>
+        <li><a href="./descendant.html">Descendant combinator selector</a></li>
+        <li><a href="./child.html">child combinator selector</a></li>
+        <li><a href="./Adjacent _sibling.html">Adjacent Sibiling combinator selector</a></li>
+        <li><a href="./General_Sibling.html">General Sibling combinator selector</a></li>
+    </ul>
+    <table border="5" cellpadding="10" width="300px" >
+        <thead>
+            <tr>
+                <th>thead</th>
+                <th>thead</th>
+                <th>thead</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>list items</li>
+        <li>list items</li>
+        <li>list items</li>
+         <li>list items</li>
+        <li>list items</li>
+    </ul>
+    <ol>
+      <li>list iems</li>
+      <li>list iems</li>
+      <li>list iems</li>
+      <li>list iems</li>
+      <li>list iems</li>
+    </ol>
+</body>
+</html>

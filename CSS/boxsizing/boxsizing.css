@@ -1,0 +1,15 @@
+*{
+    /* box-sizing:content-box; */
+    /* box-sizing: padding-box; */
+    box-sizing:border-box;
+    /* box-sizing: margin-box; */
+    margin:0px;
+    padding:0px;
+}
+conatiner{
+    height:400px;
+    width: 600px;
+    background-color: aqua;
+    padding:50px;
+    margin:50px;
+}

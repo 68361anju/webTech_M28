@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        #imgaes{
+            display: flex;
+            justify-content: space-around; 
+            gap:20px;   
+            /* background:radial-gradient(magenta,pink,blue,green,red);     */
+        }
+        h1{
+            background:radial-gradient(magenta,pink,blue,green,red);
+            padding:20px;
+            font-size:30px;
+            color:white;
+            text-align: center;
+        }
+        img{
+            border-radius: 30px;
+        }
+        #details{
+            margin-left: 500px;
+        }
+        #details>img{
+            border-radius: 50%;
+            margin-top: 100px;
+        }
+        p{
+            font-size: 20px;
+           margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image gallery</h1>
+    <div id="imgaes">
+    <div><img data-aos="fade-right" height="200px" width="200px" src="https://cdn.pixabay.com/animation/2025/05/05/22/29/22-29-42-464_512.gif" alt=""></div>
+    <div><img data-aos="fade-up" height="200px" width="200px" src="https://cdn.pixabay.com/animation/2024/07/08/23/37/23-37-00-615_512.gif" alt=""></div>
+    <div><img data-aos="fade-left" height="200px" width="200px" src="https://cdn.pixabay.com/animation/2025/02/27/13/11/13-11-10-800_512.gif" alt=""></div>
+    </div>
+    <div id="imgaes">
+    <div><img data-aos="fade-right" height="200px" width="200px" src="https://cdn.pixabay.com/animation/2024/03/04/16/52/16-52-07-671_512.gif" alt=""></div>
+    <div><img data-aos="fade-up" height="200px" width="200px" src="https://cdn.pixabay.com/animation/2023/08/30/08/47/08-47-24-373_512.gif" alt=""></div>
+    <div><img data-aos="fade-left" height="200px" width="200px" src="https://cdn.pixabay.com/animation/2024/11/16/02/20/02-20-51-934_512.gif" alt=""></div>
+    </div>
+    <div id="imgaes">
+    <div><img data-aos="fade-right" height="200px" width="200px" src="https://cdn.pixabay.com/animation/2025/01/25/14/10/14-10-24-600_512.gif" alt=""></div>
+    <div><img data-aos="fade-up" height="200px" width="200px" src="https://cdn.pixabay.com/animation/2025/01/11/13/36/13-36-37-31_512.gif" alt=""></div>
+    <div><img data-aos="fade-left" height="200px" width="200px" src="https://cdn.pixabay.com/animation/2025/06/19/10/26/10-26-18-430_512.gif" alt=""></div>
+    </div>
+    <div id="details">
+         <img src="https://cdn.pixabay.com/photo/2015/04/24/20/58/girl-738303_1280.jpg" height="300px" width="300px" alt="">
+        <p>Name:Anjali <br> Email:abc@gmail.com <br> mobile:9381068361</p>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+     AOS.init();
+    </script>
+</body>
+</html>

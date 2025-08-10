@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+        header{
+            display:flex;
+            justify-content: space-around;
+            /* border:2px solid red; */
+            padding: 5px;
+        }
+        header>img{
+            /* border:2px solid red; */
+            border-radius: 50px;
+            margin-left: 10px;
+            margin-top: 25px;
+        }
+        header>nav{
+            /* border:2px solid red; */
+            margin-left: 260px;
+            width: 630px;
+            display:flex;
+            justify-content: space-around;
+            gap:5px;
+            margin-top: 25px;
+        }
+        header>nav>a{
+            padding:15px;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: sans-serif;
+            /* font-weight: bold; */
+            color:black;
+        }
+        #sec1{
+            background-image: url(	https://rapido-app-assets.storage.googleapis.com/66e1052cdca1e68cc52d070e8c9631aa_1736774712641.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover; 
+            height: 600px;
+            padding-top:100px;
+
+        }
+        #sec1>#div1{
+            /* border:2px solid red; */
+            width: 610px;
+            height: 350px;
+            position:relative;
+            left:470px;
+        }
+        #sec1>#div1>h1{
+            font-size: 45px;
+            color:black;
+            font-family: sans-serif;
+            text-align-last: justify;
+        }
+        #sec1>#div1>form>input{
+            width: 610px;
+            height: 66px;
+            border-radius: 8px;
+            border:0.5px solid;
+            font-size: 18px;
+            padding-left: 50px;   
+        }
+        #sec1>#div1>button{
+            font-size: 30px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color:black;
+            border-radius: 8px;
+            border:none;
+            background-color: rgb(255, 202, 32);
+            width: 620px;
+            height: 66px;
+        }
+        #i1{
+            position: relative;
+            /* border: 2px solid red; */
+            top: 50px;
+        }
+        #i2{
+             position: relative;
+            /* border: 2px solid red; */
+            top: 140px;
+            left: -40px;
+        }
+        #div2{
+            margin-top: 50px;
+            /* border:5px solid red; */
+            height: 100px;
+            font-size:48px;
+            font-family: sans-serif;
+            margin-left: 180px;
+            font-weight: bold;
+            padding-top: 15px;
+
+        }
+        
+        #sec2>#flex1{
+            display:flex;
+            justify-content: space-evenly;
+            margin-top: 50px;
+        }
+        #sec2>#flex2{
+            display:flex;
+            gap: 130px;
+            margin-top: 50px;
+        }
+        #sec2>#flex2>#div7>img,#sec2>#flex2>#div7>p{
+            margin-left: 150px;
+            text-align: center;
+        font-size: 22px;
+        font-family: sans-serif;
+        padding: 10px;
+        }
+        #sec2>#flex2>#div8>p{
+         text-align: center;
+        font-size: 22px;
+        font-family: sans-serif;
+        padding: 10px;
+        }
+        #div3>img,#div4>img,#div5>img,#div6>img,#div7>img,#div8>img{
+            width: 200px;
+        }
+        #sec2>#flex1>div>p{
+            text-align: center;
+            font-size: 22px;
+            font-family: sans-serif;
+            padding: 10px;
+        }
+        #sec3{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+            margin-top: 120px;
+            background-color: rgb(246, 247, 249);
+            height: 1300px;
+        }
+        #sec3>#div9,#sec3>#div10,#sec3>#div11,#sec3>#div12,#sec3>#div13,#sec3>#div14{
+            margin-top: 120px;
+        }
+        #sec3>#div9>h1,#sec3>#div11>h1,#sec3>#div13>h1{
+            font-size: 50px;
+            font-family: sans-serif;
+            font-weight: bold;
+            padding:10px;
+        }
+        #sec3>#div9>p,#sec3>#div11>p,#sec3>#div13>p{
+            font-size: 34px;
+            font-family: sans-serif;
+            color:rgba(0, 0, 0, 0.803);
+            margin-top: 40px;  
+            padding:10px;
+       }
+        #sec3>#div9>button,#sec3>#div11>button{
+            font-size: 26px;
+            width: 220px;
+            height: 60px;
+            /* font-family: sans-serif; */
+            color:whitesmoke;
+            background-color: black;
+            border-radius: 50px;
+            margin-top: 40px;  
+            padding-right:50px;
+            border:none;
+       }
+
+       #div9,#div12,#div13{
+        /* border:2px solid red;  */
+        height: 500px;
+        margin-left: 200px;
+       }
+       #sec3>#div13>pre{
+        font-size: 35px;
+        font-family: sans-serif;
+        color:rgb(30, 75, 130);
+        margin-top: 60px;
+        font-weight: bold;
+
+       }
+       #sec4{
+        margin-top: 600px;
+        background-color: black;
+        height: 350px;
+        color:white;
+        padding:20px;
+       }
+       #sec4>#div15{
+        margin-top: 20px;
+        font-size: 50px;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-align: center;
+       }
+       #sec4>#div16{
+        /* border:2px solid red; */
+        display:flex;
+        gap: 80px;
+        margin-left: 550px;
+        margin-top: 60px;
+       }
+       #div16>#d2{
+         margin-left: 30px;
+       }
+       #d1>p,#d2>p{
+        margin-top: 30px;
+        font-size: 30px;
+        font-family: sans-serif;
+        text-align: center;
+        margin-left:  -30px;
+       }
+       #d3{
+        /* border:2px solid red; */
+        margin-top: 40px;
+        margin-left: 40px;
+        margin-right: 30px;
+        height: 1px;
+        background-color:#00000060;
+       }
+       #sec5{
+        margin-top: 20px;
+        display:flex;
+        margin-left: 500px;
+       }
+       #d7{
+        margin-top: 10px;
+        margin-left: 40px;
+        margin-right: 30px;
+        height: 1px;
+        background-color:#00000060;
+       }
+       #d8{
+        margin-top: 10px;
+        margin-left: 40px;
+        margin-right: 30px;
+        height: 1px;
+        background-color:#00000060;
+       }
+       table{
+        margin-top: 45px;
+        margin-left: 100px;
+        height: 300px;
+        width: 1000px;
+       }
+       #table>tr>#td1>img{
+        border-radius: 50px;
+       }
+       #sec6>img{
+         border-radius: 50px;
+         margin-top: 30px;
+         margin-left: 70px;
+       }
+       #sec6>table>tbody>tr>td{
+        font-size: 18px;
+        color:rgba(0, 0, 0, 0.855);
+        font-family: sans-serif;
+       }
+       footer>#d9{
+        margin-top: 10px;
+       }
+       #d9{
+        font-size: 20px;
+        color:#00000070;
+        text-align: center;
+        padding:5px;
+        margin-left: -300px;
+       }
+       #i5,#i6{
+        /* border: 2px solid red; */
+        position: relative;
+        top: -2px;
+        left: 200px;
+        color:white;   
+       }
+       #i3{
+        position: relative;
+        top: 92px;
+        left: 200px;
+        color:rgb(30, 75, 130);
+        width: 40px;
+     }
+
+
+
+       
+    </style>
+</head>
+<body>
+    <header>
+        <img height="45px" width="120px" src="https://tse3.mm.bing.net/th/id/OIP.YOau9Jjt__SrDQmJNXMtHgHaFO?rs=1&pid=ImgDetMain&o=7&rm=3" alt="logo">
+        <nav>
+            <a href="">About Us</a>
+            <a href="">Rapido Ads</a>
+            <a href="">Safety</a>
+            <a href="">Blog</a>
+            <a href="">Contact Us</a>
+        </nav>
+    </header>
+    <section id="sec1">
+        <div id="div1">
+            <h1>Bharat Moves On Rapido!</h1><br><br>
+            <i id="i1" class="fa-solid fa-location-dot fa-2x"></i>
+            <i id="i2" class="fa-solid fa-circle-dot fa-2x"></i>
+            <img src="/images/revampIconTo.svg" alt="">
+            <form action="">
+            <input id="input1" type="text" name="address" placeholder="Enter Pickup Location" required><br><br>
+            <input id="input2"  type="text" name="address"  placeholder="Enter Drop Location" required> <br><br><br><br>
+            </form>
+            <button>Book Ride</button>
+        </div>
+    </section>
+    <section id="sec2">
+        <div id="div2">
+            Our Services
+        </div>
+        <div id="flex1">
+        <div id="div3">
+            <img src="https://rapido-app-assets-staging.storage.googleapis.com/c9bf4e04eeb9f9e5a52c55a143d095c5_1738146120477.webp" alt="">
+            <p>Bike</p>
+        </div>
+        <div id="div4">
+            <img src="https://rapido-app-assets-staging.storage.googleapis.com/baa331808b70d22c33bdcb6e96c3a104_1738146204279.webp" alt="">
+            <p>Auto</p>
+        </div>
+        <div id="div5">
+            <img src="https://rapido-app-assets-staging.storage.googleapis.com/1075eff8297f3213f71cf66b5852ced5_1738146244087.webp" alt="">
+            <p>Auto Share</p>
+        </div>
+        <div id="div6">
+            <img src="https://rapido-app-assets-staging.storage.googleapis.com/5e0eec287db4aae2e64b17b9fa04cbe0_1738146281373.webp" alt="">
+            <p>Parcel</p>
+        </div>
+        </div>
+       <div id="flex2">
+         <div id="div7">
+            <img src="https://rapido-app-assets-staging.storage.googleapis.com/dd03f189ce375502079087fa3688f981_1738146314270.webp" alt="">
+            <p>Cab Economy</p>
+        </div>
+        <div id="div8">
+            <img src="https://rapido-app-assets-staging.storage.googleapis.com/ed7c8d4653fee97d2cd5c76f00871d72_1738146343883.webp" alt="">
+            <p>Cab Premium</p>
+        </div>
+       </div>
+    </section>
+    <section id="sec3">
+        <div id="div9">
+            <h1>Get Quick Rides, <br> Low Fares</h1>
+            <p>In Rapido we ensure our customers <br> get rides quickly at the most  <br> affordable prices.</p>
+            <i id="i5"class="fa-solid fa-arrow-right"></i>
+            <button>Book a ride</button>
+        </div>
+        <div id="div10">
+            <img height="460px" width="530px" src="https://rapido-app-assets-staging.storage.googleapis.com/7bfb291ed6fd8fef3949b695f66f0441_1738146457741.webp" alt="">
+        </div>
+        <div id="div12">
+            <img height="460px" width="530px" src="	https://rapido-app-assets-staging.storage.googleapis.com/c1ec7791629614c8c040a2a8c68bbc79_1738146545252.webp" alt="">
+        </div>
+           <div id="div11">
+            <h1>Flexible Hours &  <br>High Earnings</h1>
+            <p>Join as a Rapido captain and earn <br>on your own terms. Driver <br>whenever you want.</p>
+            <i id="i6" class="fa-solid fa-arrow-right"></i>
+            <button>Start Earning</button>
+        </div>
+         <div id="div13">
+            <h1>Safety for all</h1>
+            <p>At Rapido, your safety is our <br> priority. We’re dedicated to <br> making every ride safe and <br> comfortable.</p>
+            <i id="i3" class="fa-solid fa-greater-than"></i>
+            <pre>Know More</pre>
+        </div>
+        <div id="div14">
+            <img height="460px" width="530px" src="https://rapido-app-assets-staging.storage.googleapis.com/fc70552b297693e48cef580e9f9c50c3_1738574004491.webp" alt="">
+        </div>
+    </section>
+    <section id="sec4">
+        <div id="div15">
+            Download Now
+        </div>
+        <div id="div16">
+            <div id="d1">
+                <img    height="80px"    width="120px"  src="https://rapido-app-assets.storage.googleapis.com/5c6ff9a6070679cf24dbf94c5b78fbbc_1743499170110.svg" alt="">
+                <p>Rapido: Bike-Taxi,<br> Auto & Cabs</p>
+            </div>
+            <div id="d2">
+                <img height="80px"    width="80px" src="https://rapido-app-assets-staging.storage.googleapis.com/d261bc5886ba0e8d96fe1257004bbfb7_1738146890759.webp" alt="">
+                <p>Rapido Captain:  <br> Drive & Earn</p>
+            </div>
+        </div>
+    </section>
+    <div id="d3"></div>
+    <section id="sec5">
+        <div id="d4">
+            <img  height="120px" width="120px" src="https://rapido-app-assets.storage.googleapis.com/accad5713b1c3eea6c5fe812ae1b411c_1737391637497.svg" alt="">
+        </div>
+        <div id="d5">
+            <img height="120px" width="120px" src="https://rapido-app-assets.storage.googleapis.com/0a78fb804f5a18beb78abbf9380ee332_1737391634474.svg" alt="">
+        </div>
+         <div id="d6">
+            <img height="120px" width="120px" src="https://rapido-app-assets.storage.googleapis.com/d132b2d8ca47e2802f3fbcfc554d77db_1737391638642.svg" alt="">
+        </div>
+    </section>
+    <div id="d7"></div>
+    <section id="sec6">
+        <img height="45px" width="120px" src="https://tse3.mm.bing.net/th/id/OIP.YOau9Jjt__SrDQmJNXMtHgHaFO?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Home</td>
+                    <td>Customer Terms-Bike Taxi</td>
+                </tr>
+                <tr>
+                    <td>About Us</td>
+                    <td>Customer Terms-Cabs and Auto</td>
+                </tr>
+                <tr>
+                    <td>Careers</td>
+                    <td>Corporate Affairs</td>
+                </tr>
+                <tr>
+                    <td>Safety</td>
+                    <td>Captain Terms-Bike Taxi</td>
+                </tr>
+                <tr>
+                    <td>Blog</td>
+                    <td>Customer Terms-Cabs and Auto</td>
+                </tr>
+                <tr>
+                    <td>Press</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Policy</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <div id="d8"></div>
+    <footer>
+       <div id="d9">© 2025 Rapido Transportation. All rights reserved.</div> 
+    </footer>
+</body>
+</html>

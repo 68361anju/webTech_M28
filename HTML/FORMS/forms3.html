@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="user">username</label><br>
+        <input  id="user" type="text" name="username" placeolder="enter username" minlength="3" maxlength="10"autofocus
+        autocompleted required> <br><br>
+        <label for="email">email</label><br>
+        <input  id="email" type="text" name="email" placeolder="enter email" 
+        autocompleted required> <br><br>
+        <label for="pass">password</label><br>
+        <input id="pass" type="password" name="password" placeolder="enter password" minlength="3" maxlength="8"
+        autocompleted required> <br><br>
+        <input type="number" name="age" placeholder="age" min="18" max="50" required><br><br>
+
+        <label>gender</label>
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="male">male</label>
+        <input type="radio" name="gender" value="female" id="female" checked>
+        <label for="female">female</label>
+        <input type="radio" name="gender" value="others" id="others" disabled>
+        <label for="others">others</label>
+
+        <br><br>
+
+
+        <label>languages known</label>
+         <input type="checkbox" name="lang" value="eng" id="eng" checked>
+        <label for="eng">English</label>
+         <input type="checkbox" name="lang" value="tel" id="tel">
+        <label for="tel">Telugu</label>
+         <input type="checkbox" name="lang" value="hin" id="hin">
+        <label for="hin">Hindi</label>
+        <br><br>
+        <label for="date">date of birth</label>
+        <input type="date" name="dob" >
+
+
+        <!-- dropdown list -->
+         <label for="loc">Location:</label>
+         <select name="location" id="loc">
+            <option value="hyd">hyderabad</option>
+            <option value="chennai">chennai</option>
+            <option value="pune">pune</option>
+            <option value="banglore">banglore</option>
+         </select><br><br>
+         <label for="feed">feedback:</label>
+         <textarea name="feedback" id="feed">feedback</textarea><br><br>
+         
+        <input type="reset">
+
+        
+        <button>submit</button>
+        
+        
+        
+
+    </form>
+</body>
+</html>

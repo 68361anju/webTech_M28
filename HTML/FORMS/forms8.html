@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width", initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .name
+        {
+            background-color: rgb(99, 99, 241);
+            text-decoration-color: black;
+            font-size: 60;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <table cellpadding="5" border="5">
+            <tr class="name">
+                <th>Name</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td ><label for="name">Name</label></td>
+                <td><input type="text" namr="name" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="sex">Sex</label></td>
+                <td>
+                    <input type="radio" name="sex" id="male">
+                    <label for="male">Male</label><br>
+                     <input type="radio" name="sex" id="female" checked>
+                    <label for="male">Female</label>
+
+                </td>
+            </tr>
+            <tr>
+                <td><label for="eye">Eye color</label></td>
+                <td><select name="ecolor" id="eye">
+                    <option value="green">green</option>
+                    <option value="brown">brown</option>
+                    <option value="black">black</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="apply">Check all the apply</label></td>
+                <td>
+                    <input type="checkbox" name="apply" value="6feet" id="6">
+                    <label for="6">Over 6 feet tall</label><br>
+                    <input type="checkbox" name="apply" value="200pounds" id="200">
+                    <label for="200">Over 200 Pounds</label>
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">Describe your atheletic: <br><br>
+                    <textarea name="describtion" id="des" cols="100" rows="5"></textarea>
+              </td>
+                
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Enter my information">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

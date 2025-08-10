@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .field
+        {
+           background-color: rgba(163, 195, 222, 0.908);
+        }
+        .table1
+        {
+           border-style: inset;
+           background-color: white;
+           height: 200px;
+           width: 350px;
+          
+           
+        }
+         .table2
+        {
+           background-color: white;
+           width: 350px;
+        }
+         .table3
+        {
+           background-color: white;
+           width: 350px;
+        }
+         .table4
+        {
+           background-color: white;
+           width: 350px;
+        }
+         .table5
+        {
+           background-color: white;
+           width: 350px;
+        }
+         .table6
+        {
+           background-color: white;
+           width: 350px;
+        }
+        .a
+        {
+            background-color: rgba(163, 195, 222, 0.908) ;
+        }
+        .b
+        {
+            background-color: rgba(163, 195, 222, 0.908) ;
+        }
+        .c
+        {
+            background-color: rgba(163, 195, 222, 0.908);
+        }
+        .d
+        {
+            background-color:rgba(163, 195, 222, 0.908) ;
+        }
+        .e
+        {
+            background-color:rgba(163, 195, 222, 0.908);
+        }
+        .f
+        {
+            background-color: rgba(163, 195, 222, 0.908);
+        }
+        .sub
+        {
+            background-color: white;
+            border-radius: 20px;
+        }
+        .sub1
+        {
+            border: 0;
+        }
+        
+       
+    </style>
+</head>
+<body>
+   
+    <form >
+       
+        <table cellspacing="30" border="0" class="field">
+            <tbody>
+                <tr>
+                    <td>
+                        <table class="table1" border="0"  cellspacing="3">
+                            <tbody>
+                                <tr class="a">
+                                    <th colspan="2">Device details</th> 
+                                </tr>
+                                <tr>
+                         <td>
+                            <label for="i">*Device ID:</label>
+                         </td>
+                         <td>
+                            <input type="number" name="device" id="i" required>
+                         </td>
+                    </tr>
+                    <td>
+                             <label for="i1">*Device Name:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="devicename" id="i1" required>
+                            </td>
+                     </tr>
+                        <tr>
+                             <td>
+                            <label for="i2">*Device Type:</label>
+                         </td>
+                         <td>
+                            <input type="text" name="devicetype" id="i2" required>
+                         </td>
+                        </tr>
+                          <tr>
+                             <td>
+                              <label for="i3">*Operating Systems:</label>
+                           </td>
+                           <td>
+                            <input type="text" name="OS" id="i3" required>
+                           </td>
+                          </tr>
+                           <tr>
+                            <td>
+                            <label for="i4">*Datacenter:</label>
+                           </td>
+                           <td>
+                             <Select style="width:180px;" id="i4" name="datacenter">
+                                <option value="none">none</option>
+                            </Select>
+                           </td>
+                           </tr>      
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>
+                        <table class="table2" cellspacing="5">
+                            <tbody>
+                               <tr class="b"><th colspan="2">Configured Assets</th></tr>
+                        <tr>
+                             <td><label for="a">CPU:</label>
+                         </td>
+                         <td>
+                            <Select style="width:180px;" id="a" name="Configured Assets">
+                            <option value="none">none</option>
+                            </Select>
+                         </td>
+                        </tr>
+                        <tr>
+                             <td>
+                            <label for="a1">chassis:</label>
+                        </td>
+                        <td>
+                            <Select style="width:180px;" id="a1" name="chassis">
+                            <option value="none">none</option>
+                            </Select>
+                        </td>
+                        </tr>
+                       <tr>
+                         <td>
+                            <label for="a2">Mothetr Board:</label>
+                        </td>
+                        <td>
+                             <Select  style="width:180px;" id="a2" name="Mothetr Board">
+                            <option value="none">none</option>
+                            </Select>
+                        </td>
+                       </tr>
+                       <tr>
+                          <td>
+                            <label for="a2">Mothetr Board:</label>
+                        </td>
+                        <td>
+                             <Select style="width:180px;" id="a2" name="Mothetr Board">
+                            <option value="none">none</option>
+                            </Select>
+                        </td>
+                    </tr>
+                          <td>
+                            <label for="a3">RAM:</label>
+                        </td>
+                        <td>
+                            <select  style="width:180px;" name="ram" id="a3">
+                                <option value="none">none</option>
+                            </select>
+                        </td>
+                      </tr>
+                       <tr>
+                         <td>
+                            <label for="a4">Hard-Drives: </label>
+                        </td>
+                        <td>
+                             <Select style="width:180px;" id="a4" name="Drives">
+                            <option value="none">none</option>
+                            </Select>
+                        </td>
+                       </tr>
+                      <tr>
+                          <td>
+                             <label for="a5">Hard-Drives: </label>
+                        </td>
+                        <td>
+                             <Select style="width:180px;" id="a5" name="Drives">
+                            <option value="none">none</option>
+                            </Select>
+                        </td>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table class="table3" cellspacing="5">
+                            <tbody>
+                                <tr class="c">
+                                    <th colspan="2">Network Configurations:</th>
+                                </tr>
+                                <tr>
+                                    <td><label for="ip1">IP block #1:</label></td>
+                                    <td> <Select style="width:180px;" id="ip1" name="block1">
+                            <option value="none">none</option>
+                            </Select></td>
+                                </tr>
+                                  <tr>
+                                    <td><label for="ip2">IP block #2:</label></td>
+                                    <td> <Select style="width:180px;" id="ip2" name="block2">
+                            <option value="none">none</option>
+                            </Select></td>
+                                </tr>
+                                  <tr>
+                                    <td><label for="ip3">IP block #3:</label></td>
+                                    <td> <Select  style="width:180px;" id="ip3" name="block3">
+                            <option value="none">none</option>
+                            </Select>
+                                </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>
+                        <table class="table4" cellspacing="5">
+                            <tbody>
+                                <tr class="d">
+                                    <th colspan="2"> Assigned Inventory</th>
+                                </tr>
+                                <tr>
+                                    <td><label for="item1">Item1.#</label></td>
+                                         <td> <Select style="width:180px;" id="item1" name="item1">
+                            <option value="none">none</option>
+                            </Select>
+                                </td>
+                                </tr>
+                                <tr>
+                                          <td><label for="item2">Item2.#</label></td>
+                                         <td> <Select style="width:180px;" id="item2" name="item2">
+                            <option value="none">none</option>
+                            </Select>
+                                </td>
+                                </tr>
+                                <tr>
+                                        <td><label for="item3">Item3.#</label></td>
+                                         <td><Select style="width:180px;" id="item3" name="item3">
+                                         <option value="none">none</option>
+                            </Select>
+                                </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table class="table5" cellspacing="5">
+                            <tbody>
+                                <tr class="e">
+                                    <th colspan="2">IPMI/DRAC Credentials:</th>
+                                </tr>
+                                <tr>
+                                    <td><label for="add">IP Address:</label>
+                                    </td>
+                                    <td><input type="number" name="address" id="add" value="address" ></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="add1">Username:</label></td>
+                                    <td><input type="text" name="username" id="add1"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="add2">Password:</label></td>
+                                    <td><input type="password" name="password" id="add2" ></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>
+                         <table class="table6" cellspacing="5">
+                            <tbody>
+                                <tr class="f">
+                                    <th colspan="2">RDP/SSH Credentials:</th>
+                                </tr>
+                                <tr>
+                                    <td><label for="add">IP Address:</label>
+                                    </td>
+                                    <td><input type="number" name="address" id="add" value="address" ></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="add1">Username:</label></td>
+                                    <td><input type="text" name="username" id="add1" ></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="add2">Password:</label></td>
+                                    <td ><input type="password" name="password" id="add2" ></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr  class="sub1">
+                    <td colspan="2" align="center"><button class="sub">submit</button></td>     
+                </tr>
+            </tbody>
+        
+        </table>
+       
+    </form>
+   
+</body>
+</html>
