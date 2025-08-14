@@ -5,50 +5,50 @@
 
 //Number
 var a=10.68;
-comnsole.log(a);
+console.log(a);
 console.log(typeof a);
 
 
 var a=123645461654168;
-comnsole.log(a);
+console.log(a);
 console.log(typeof a);
 
 
 var a=68;
-comnsole.log(a);
+console.log(a);
 console.log(typeof a);
 
 //boolean
-var a=True;
-comnsole.log(a);
+var a=true;
+console.log(a);
 console.log(typeof a);
 
 var a=false;
-comnsole.log(a);
+console.log(a);
 console.log(typeof a);
 
 
 //? String
 var a="true";
-comnsole.log(a);
+console.log(a);
 console.log(typeof a);
 
 var a='100';
-comnsole.log(a);
+console.log(a);
 console.log(typeof a);
 
 var a= `name`;
-comnsole.log(a);
+console.log(a);
 console.log(typeof a);
 
 //todo  undefined---It is the defult value of the variable which is declared but not initialized with any value.
 let b;
-comnsole.log(b);
+console.log(b);
 console.log(typeof b);
 
 
 var c;
-comnsole.log(c);
+console.log(c);
 console.log(typeof c);
 
 
@@ -56,12 +56,12 @@ console.log(typeof c);
 // datatype of null is object
 
 let d=Null;
-comnsole.log(d);
+console.log(d);
 console.log(typeof d);
 
 //bigint
 d=123n;
-comnsole.log(d);
+console.log(d);
 console.log(typeof d);
 
 
